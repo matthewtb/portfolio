@@ -1,0 +1,1314 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>navigator</title>
+		<link rel="stylesheet" type="text/css" href="styles/stream_style_9.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/vm_style_new.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/vm_style_edit.css"/>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'/>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<link rel="shortcut icon" href="images/windstream_favicon.ico"/>
+	</head>
+	<body>
+		<header>
+		
+			<section class="top">
+				<div class="header_wrapper">
+					<div class="container">
+						<div id="top_left">
+							<a href="#"><img src="images/Logo.png" alt="windstream logo"/></a>
+						</div>
+						<section id="top_right">
+							<div id="org_user_wrapper">
+								<div id="styled_user">
+									<ul>
+										<li id="organization"><a href="#">Select Organization<img src="images/drop_menu.png" alt="carat symbol for drop down decoration"/></a>
+											<ul>
+												<li><a href="#">Select Organization</a></li>
+												<li><a href="#">Select Organization</a></li>
+												<li><a href="#">Select Organization</a></li>
+											</ul>
+										</li>
+
+										<li id="user"><a href="#">Matthew Trilby-Bassett<img src="images/drop_menu.png" alt="carat symbol for drop down decoration"/></a>
+											<ul>
+												<li><a href="#">Edit Profile</a></li>
+												<li><a href="#">Settings</a></li>
+												<li><a href="#">Logout</a></li>
+											</ul>
+										</li>
+									</ul>	
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+			<!--navigation construction-->
+			<section class="navigation">
+				<div class="header_wrapper">
+					<nav class="container">
+						<ul>
+							<li><a href="#">monitoring</a>
+								<ul>
+									<li><a href="#">Summary View</a></li>
+									<li id="wide"><a href="#">Device Monitoring Dashboard</a></li>
+									<li><a href="#">Reports</a></li>
+									<li><a href="#">Activity Log</a></li>
+								</ul>
+							</li>
+							<li><a href="#">services</a>
+								<ul>
+									<li id="wide"><a href="#">Cloud Virtual Data Centers</a></li>
+									<li><a href="#">Storage</a></li>
+									<li><a href="#">DRaaS</a></li>
+									<li><a href="#">Load Balancing</a></li>
+									<li><a href="#">DNS</a></li>
+									<li><a href="#">Cloud Migrations</a></li>
+									<li><a href="#">Object Stores</a></li>
+								</ul>
+							</li>
+							<li><a href="#">security</a>
+								<ul>
+									<li><a href="#">Firewalls</a></li>
+									<li><a href="#">VPNs</a></li>
+									<li><a href="#">DDoS Defence</a></li>
+									<li><a href="#">Cloud AV</a></li>
+								</ul>
+							</li>
+							<li><a href="#">support</a>
+								<ul>
+									<li><a href="#">Contacts</a></li>
+									<li><a href="#">Tickets</a></li>
+									<li><a href="#">Forms</a></li>
+									<li><a href="#">Announcements</a></li>
+									<li><a href="#">Documents</a></li>
+									<li><a href="#">How To</a></li>
+									<li><a href="#">FAQs</a></li>
+								</ul>
+							</li>
+							<li><a href="#">account</a>
+								<ul>
+									<li><a href="#">Account Settings</a></li>
+									<li><a href="#">Permissions</a></li>
+									<li><a href="#">Escalation</a></li>
+									<li><a href="#">Billing</a></li>
+									<li><a href="#">Notifications</a></li>
+									<li><a href="#">Users</a></li>
+									<li><a href="#">Sub Accounts</a></li>
+									<li><a href="#">API</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+			<!--breadcrumb navigation section-->
+			<!--includes the new evdc selector styled to allow consistency across browsers-->
+			<section class="breadcrumb">
+				<div class="header_wrapper">
+					<div class="container">
+						<ul class="container_evdc_breadcrumb">
+							<li><a href="#">Home ></a></li>
+							<li><a href="#">EVDC ></a></li>
+							<li><a href="#">Virtual Machines ></a></li>
+							<li><a href="#">Canley ></a></li>
+							<li><a href="#">Edit VM</a></li>
+						</ul>
+						<div class="select_evdc">
+							<ul>
+								<li><span>Select EVDC</span></li>
+
+								<li class="evdc_options"><a href="#">11 Giraffe 01<img src="images/DownArrow_Icon.png" alt="carat symbol for drop down decoration"/></a>
+									<ul>
+										<li><a href="#">11 Giraffe 01</a></li>
+										<li><a href="#">11 Giraffe 01</a></li>
+										<li><a href="#">11 Giraffe 01</a></li>
+									</ul>
+								</li>
+							</ul>	
+						</div>
+					</div>
+				</div>
+				
+			</section>
+
+			<!--error feedback section-->
+			<!--hidden class hides the box-->
+			<section class="feedback hidden">
+				<div class="header_wrapper">
+					<div class="container">
+						<p><img src="images/confirm.png" alt="green check to show confirmation"/> Confirmation or <img src="images/error.png" alt="red exclamation point to show error"/> Error Feedback</p>
+					</div>
+				</div>
+			</section>
+
+		</header>
+
+
+		<main>
+			<div class="container">
+				<section class="vm_rectangle">
+
+					<!--VM HEADER, the section above the table that includes the create vm button-->
+					<!--includes necessary id's in order to attach actions-->
+					<section id="vm_header">
+						<div id="vm_create">
+							<span><a href="#"><img src="images/Plus_Icon_Smaller.png" alt="add virtual machine"/>Add Virtual Machine</a></span>
+						</div>
+						<div id="vm_print">
+							<a href="#"><img src="images/PDF_Icon.png" alt="PDF"/></a>
+							<a href="#"><img src="images/CSV_Icon.png" alt="CSV"/></a>
+						</div>
+					</section>
+
+					<!--TABLE SECTION, this is the main portion of the page-->
+					<!--I have only included the expanded html code under one row of the table, to add to every row, copy and paste and rename the id's numerically as seen fit-->
+					<section>
+						<table class="vm_table_construction">
+
+							<!--these are the control ids for the column widths and styles-->
+							<colgroup><col id="table_col_vm_name"/><col id="table_col_vapp_name"/><col id="table_col_os"/><col id="table_col_state"/><col id="table_col_vcpu"/><col id="table_col_vram"/><col id="table_col_storage"/><col id="table_col_ip"/><col id="table_col_monitor"/><col id="table_col_mgmt"/></colgroup>
+
+							<!--col titles and links-->
+							<!--ids are included if you would wish to use them inorder to adjust the widths of the underline-->
+							<thead>
+								<th class="thead_selected" id="table_thead_vm_name"><a href="#">VM Name<img src="images/DownArrow_Icon.png" alt="drop arrow"/></a></th>
+								<th class="thead_selected" id="table_thead_vapp_name"><a href="#">VApp Name<img src="images/DownArrow_Icon.png" alt="drop arrow"/></a></th>
+								<th class="thead_selected" id="table_thead_os"><a href="#">OS<img src="images/DownArrow_Icon.png"/></a></th>
+								<th class="thead_selected" id="table_thead_state"><a href="#">State<img src="images/DownArrow_Icon.png" alt="drop arrow"/></a></th>
+								<th class="thead_selected" id="table_thead_vcpu"><a href="#">vCPU<img src="images/DownArrow_Icon.png" alt="drop arrow"/></a></th>
+								<th class="thead_selected" id="table_thead_vram"><a href="#">vRAM<img src="images/DownArrow_Icon.png" alt="drop arrow"/></a></th>
+								<th class="thead_selected" id="table_thead_storage"><a href="#">Total Storage<img src="images/DownArrow_Icon.png" alt="drop arrow"/></a></th>
+								<th class="thead_selected" id="table_thead_ip"><a href="#">IP Address<img src="images/DownArrow_Icon.png" alt="drop arrow"/></a></th>
+								<th class="thead_selected" id="table_thead_monitored"><a href="#">Monitored<img src="images/DownArrow_Icon.png" alt="drop arrow"/></a></th>
+								<th class="thead_selected" id="table_thead_mgmt"><a href="#">OS Managed<img src="images/DownArrow_Icon.png" alt="drop arrow"/></a></th>
+							</thead>
+
+							<!--body section, holds content and ids for individual content-->
+							<tbody>
+								<tr class="odd main_row">
+									<td><img src="images/Compress_Arrow.png"/>Canley</td>
+									<td>Bropper</td>
+									<td><img src="images/RedHat_Icon_Full.png"/><img src="images/Linux_Icon_Half.png"/></td>
+									<td>Starting</td>
+									<td>2</td>
+									<td>Vindico</td>
+									<td>502 GB</td>
+									<td>50.155.36.228</td>
+									<td><img src="images/Eye_Icon.png"/></td>
+									<td>Managed</td>
+								</tr>
+
+								<!--contains the selected class that changes the color of the selected row-->
+								<tr class="even main_row selected">
+									<td><img src="images/Expand_Arrow.png"/>Canley</td>
+									<td>Bropper</td>
+									<td><img src="images/Mac_Icon_Full.png"/><img src="images/Windows8_Icon_Full.png"/><img src="images/MicrosoftWindows_Icon_Full.png"/></td>
+									<td>Starting</td>
+									<td>12</td>
+									<td>Vindico</td>
+									<td>502 GB</td>
+									<td>50.155.36.228</td>
+									<td><img src="images/Eye_Icon.png"/></td>
+									<td>Managed</td>
+								</tr>
+
+								<!--expansion of row 2-->
+								<tr class="vm_subrow">
+									<td colspan="10">
+										<div>
+											<!--VM ACTION BUTTONS, top of expansion-->
+											<section class="vm_row_section vm_start">
+												<div id="vm_edit">
+													<button class="vm_button" id="vm_button_start_edit"><a href="#"><img src="images/Edit_Button_Icon.png" alt="edit vm"/>Edit VM</a></button>
+													<button class="vm_button" id="vm_button_start_refresh"><a href="#"><img src="images/RefreshDets_Button_Icon.png" alt="refresh vm"/>Refresh Details</a></button>
+												</div>
+												<div id="vm_controls">
+													<button class="vm_button" id="vm_button_start_start"><a href="#"><img src="images/Play_Button_Icon.png" alt="start vm"/>Start</a></button>
+													<button class="vm_button" id="vm_button_start_stop"><a href="#"><img src="images/Stop_Button_Icon.png" alt="stop vm"/>Stop</a></button>
+													<button class="vm_button" id="vm_button_start_reset"><a href="#"><img src="images/Reset_Button_Icon.png" alt="reset vm"/>Reset</a></button>
+													<button class="vm_button" id="vm_button_start_suspend"><a href="#"><img src="images/Suspend_Button_Icon.png" alt="suspend vm"/>Suspend</a></button>
+												</div>
+											</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+											<section class="vm_row_section vm_drop_down vm_edit_vm_section">
+												<div class="vm_edit_navigation">
+													<ul>
+														<li><a href="#">General</a></li>
+														<li><a href="#">Hardware & Disks</a></li>
+														<li><a href="#">NICs</a></li>
+														<li><a href="#">Guest OS Customization</a></li>
+														<li><a href="#">Advanced Actions</a></li>
+													</ul>
+												</div>
+												<div id="expanded_top_navigation"></div>
+
+												<div class="vm_edit_general">
+													<div class="full_span_div">
+														<span>Computer Name</span>
+														<span>Operating System Family</span>
+														<span>Operating System</span>
+													</div>
+													<div class="full_span_div">
+														<form class="vm_edit_input_field third_span third_spacing">
+															<input type="text"/>
+														</form>
+														<section class="edit_select_vm top_drop third_span input_third_definition">
+															<div>
+																<nav>
+																	<ul>
+																		<li><a href="#">Single<img src="images/DownArrow_Icon.png" alt="carat symbol for drop down decoration"/></a>
+																			<ul>
+																				<li><a href="#">Dual</a></li>
+																				<li><a href="#">Triple</a></li>
+																				<li><a href="#">Quad</a></li>
+																				<li><a href="#">Penta</a></li>
+																				<li><a href="#">Hexa</a></li>
+																				<li><a href="#">Hepta</a></li>
+																				<li><a href="#">Octa</a></li>
+																			</ul>
+																		</li>
+																	</ul>
+																</nav>
+															</div>	
+														</section>
+														<section class="edit_select_vm top_drop third_span input_third_definition">
+															<div>
+																<nav>
+																	<ul>
+																		<li><a href="#">Single<img src="images/DownArrow_Icon.png" alt="carat symbol for drop down decoration"/></a>
+																			<ul>
+																				<li><a href="#">Dual</a></li>
+																				<li><a href="#">Triple</a></li>
+																				<li><a href="#">Quad</a></li>
+																				<li><a href="#">Penta</a></li>
+																				<li><a href="#">Hexa</a></li>
+																				<li><a href="#">Hepta</a></li>
+																				<li><a href="#">Octa</a></li>
+																			</ul>
+																		</li>
+																	</ul>
+																</nav>
+															</div>	
+														</section>
+													</div>
+													<div class="full_span_div">
+														<span>Description</span>
+														<span>Stoarge Profile</span>
+														<span>Host Time Sychronization</span>
+													</div>
+													<div class="full_span_div">
+														<div></div>
+														<div>
+
+														</div>
+														<div>
+
+														</div>
+													</div>
+												</div>
+
+
+
+												<!--HARDWARE AND DISK SECTION OF EDIT VM-->
+												<!--broken into 2 sections naturally based on the layout-->
+												<!--====================================================-->
+												<div class="vm_edit_hardware">
+													<!--hardware section of the vm edit-->
+													<div class="full_span_div vm_underline edit_hardware_hardware">
+														<span class="vm_edit_title">Hardware</span>
+														<!--titles of input sections below them-->
+														<div class="full_span_div vm_edit_sub_title">
+															<span class="third_span third_spacing">Number of vCPUs<a href="#"></a></span>
+															<span class="third_span third_spacing">Total vRam</span>
+															<span class="third_span">Number of Cores</span>
+														</div>
+														<!--input sections that corespond to the above titles-->
+														<div class="full_span_div vm_edit_input_field">
+															<form class="third_span third_spacing">
+																<input type="text"/>
+															</form>
+															<form class="third_span third_spacing">
+																<input type="text"/>
+															</form>
+															<section class="edit_select_vm top_drop third_span input_third_definition">
+																<div>
+																	<nav>
+																		<ul>
+																			<li><a href="#">Single<img src="images/DownArrow_Icon.png" alt="carat symbol for drop down decoration"/></a>
+																				<ul>
+																					<li><a href="#">Dual</a></li>
+																					<li><a href="#">Triple</a></li>
+																					<li><a href="#">Quad</a></li>
+																					<li><a href="#">Penta</a></li>
+																					<li><a href="#">Hexa</a></li>
+																					<li><a href="#">Hepta</a></li>
+																					<li><a href="#">Octa</a></li>
+																				</ul>
+																			</li>
+																		</ul>
+																	</nav>
+																</div>	
+															</section>
+														</div>
+													</div>
+
+													<!--disk section of vm edits-->
+													<div class="full_span_div edit_hardware_disk">
+														<span class="vm_edit_title">Disks</span>
+														<table class="full_span_div unique_edit_table">
+															<colgroup><col id="edit_disk_col_name"/><col id="edit_disk_col_size"/><col id="edit_disk_col_bus"/><col id="edit_disk_col_unit"/><col id="edit_disk_col_modify"/><col id="edit_disk_col_delete"/></colgroup>
+															<thead>
+																<th>Name</th>
+																<th>Size</th>
+																<th>Bus Number</th>
+																<th>Unit Number</th>
+																<th></th>
+																<th></th>
+															</thead>
+															<tbody>
+																<tr class="odd">
+																	<td>Disk 0</td>
+																	<td class="hardware_size_section">
+																		<section class="edit_select_vm top_drop narrow_drop">
+																			<div>
+																				<nav>
+																					<ul>
+																						<li><a href="#">10<img src="images/DownArrow_Icon.png" alt="carat symbol for drop down decoration"/></a>
+																							<ul>
+																								<li><a href="#">20</a></li>
+																								<li><a href="#">30</a></li>
+																								<li><a href="#">40</a></li>
+																								<li><a href="#">50</a></li>
+																								<li><a href="#">60</a></li>
+																								<li><a href="#">70</a></li>
+																								<li><a href="#">80</a></li>
+																								<li><a href="#">90</a></li>
+																								<li><a href="#">100</a></li>
+																							</ul>
+																						</li>
+																					</ul>
+																				</nav>
+																			</div>	
+																		</section>
+																		<section class="edit_select_vm top_drop narrow_drop">
+																			<div>
+																				<nav>
+																					<ul>
+																						<li><a href="#">kB<img src="images/DownArrow_Icon.png" alt="carat symbol for drop down decoration"/></a>
+																							<ul>
+																								<li><a href="#">MB</a></li>
+																								<li><a href="#">GB</a></li>
+																								<li><a href="#">TB</a></li>
+																							</ul>
+																						</li>
+																					</ul>
+																				</nav>
+																			</div>	
+																		</section>
+																	</td>
+																	<td>
+																		<section class="edit_select_vm top_drop">
+																			<div>
+																				<nav>
+																					<ul>
+																						<li><a href="#">0<img src="images/DownArrow_Icon.png" alt="carat symbol for drop down decoration"/ class="edit_vm_drop_carat"></a>
+																							<ul>
+																								<li><a href="#">1</a></li>
+																								<li><a href="#">2</a></li>
+																								<li><a href="#">3</a></li>
+																								<li><a href="#">4</a></li>
+																								<li><a href="#">5</a></li>
+																								<li><a href="#">6</a></li>
+																								<li><a href="#">7</a></li>
+																								<li><a href="#">8</a></li>
+																								<li><a href="#">9</a></li>
+																								<li><a href="#">10</a></li>
+																							</ul>
+																						</li>
+																					</ul>
+																				</nav>
+																			</div>	
+																		</section>
+																	</td>
+																	<td>
+																		<section class="edit_select_vm top_drop">
+																			<div>
+																				<nav>
+																					<ul>
+																						<li><a href="#">0<img src="images/DownArrow_Icon.png" alt="carat symbol for drop down decoration"/></a>
+																							<ul>
+																								<li><a href="#">1</a></li>
+																								<li><a href="#">2</a></li>
+																								<li><a href="#">3</a></li>
+																								<li><a href="#">4</a></li>
+																								<li><a href="#">5</a></li>
+																								<li><a href="#">6</a></li>
+																								<li><a href="#">7</a></li>
+																								<li><a href="#">8</a></li>
+																								<li><a href="#">9</a></li>
+																								<li><a href="#">10</a></li>
+																							</ul>
+																						</li>
+																					</ul>
+																				</nav>
+																			</div>	
+																		</section>
+																	</td>
+																	<td class="table_action_a"><a href="#">Modify</a></td>
+																	<td class="table_action_a"><a href="#">Delete</a></td>
+																</tr>
+																<tr class="even">
+																	<td>Disk 0</td>
+																	<td class="hardware_size_section">
+																		<section class="edit_select_vm narrow_drop">
+																			<div>
+																				<nav>
+																					<ul>
+																						<li><a href="#">10<img src="images/DownArrow_Icon.png" alt="carat symbol for drop down decoration"/></a>
+																							<ul>
+																								<li><a href="#">20</a></li>
+																								<li><a href="#">30</a></li>
+																								<li><a href="#">40</a></li>
+																								<li><a href="#">50</a></li>
+																								<li><a href="#">60</a></li>
+																								<li><a href="#">70</a></li>
+																								<li><a href="#">80</a></li>
+																								<li><a href="#">90</a></li>
+																								<li><a href="#">100</a></li>
+																							</ul>
+																						</li>
+																					</ul>
+																				</nav>
+																			</div>	
+																		</section>
+																		<section class="edit_select_vm narrow_drop">
+																			<div>
+																				<nav>
+																					<ul>
+																						<li><a href="#">kB<img src="images/DownArrow_Icon.png" alt="carat symbol for drop down decoration"/></a>
+																							<ul>
+																								<li><a href="#">MB</a></li>
+																								<li><a href="#">GB</a></li>
+																								<li><a href="#">TB</a></li>
+																							</ul>
+																						</li>
+																					</ul>
+																				</nav>
+																			</div>	
+																		</section>
+																	</td>
+																	<td>
+																		<section class="edit_select_vm">
+																			<div>
+																				<nav>
+																					<ul>
+																						<li><a href="#">0<img src="images/DownArrow_Icon.png" alt="carat symbol for drop down decoration"/></a>
+																							<ul>
+																								<li><a href="#">1</a></li>
+																								<li><a href="#">2</a></li>
+																								<li><a href="#">3</a></li>
+																								<li><a href="#">4</a></li>
+																								<li><a href="#">5</a></li>
+																								<li><a href="#">6</a></li>
+																								<li><a href="#">7</a></li>
+																								<li><a href="#">8</a></li>
+																								<li><a href="#">9</a></li>
+																								<li><a href="#">10</a></li>
+																							</ul>
+																						</li>
+																					</ul>
+																				</nav>
+																			</div>	
+																		</section>
+																	</td>
+																	<td>
+																		<section class="edit_select_vm">
+																			<div>
+																				<nav>
+																					<ul>
+																						<li><a href="#">0<img src="images/DownArrow_Icon.png" alt="carat symbol for drop down decoration"/></a>
+																							<ul>
+																								<li><a href="#">1</a></li>
+																								<li><a href="#">2</a></li>
+																								<li><a href="#">3</a></li>
+																								<li><a href="#">4</a></li>
+																								<li><a href="#">5</a></li>
+																								<li><a href="#">6</a></li>
+																								<li><a href="#">7</a></li>
+																								<li><a href="#">8</a></li>
+																								<li><a href="#">9</a></li>
+																								<li><a href="#">10</a></li>
+																							</ul>
+																						</li>
+																					</ul>
+																				</nav>
+																			</div>	
+																		</section>
+																	</td>
+																	<td class="table_action_a"><a href="#">Modify</a></td>
+																	<td class="table_action_a"><a href="#">Delete</a></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+
+													<!--controls add disk and save edits button-->
+													<div class="full_span_div edit_hardware_save">
+														<div id="nic_create">
+															<span><a href="#"><img src="images/Plus_Icon_Smaller.png" alt="add Disk"/>Add Disk</a></span>
+														</div>
+														<button class="save_edits_button"><a href="#">Save Edits</a></button>
+													</div>
+												</div>
+
+
+
+												<div class="vm_edit_nics">
+													<table class="full_span_div unique_edit_table">
+														<colgroup><col id="edit_nic_col_nic"/><col id="edit_nic_col_connected"/><col id="edit_nic_col_network"/><col id="edit_nic_col_primary"/><col id="edit_nic_col_mode"/><col id="edit_nic_col_address"/><col id="edit_nic_col_modify"/><col id="edit_nic_col_delete"/></colgroup>
+														<thead>
+															<th>NIC#</th>
+															<th>Connected</th>
+															<th>Network</th>
+															<th>Primary NIC</th>
+															<th>IP Mode</th>
+															<th>IP Address</th>
+															<th></th>
+															<th></th>
+														</thead>
+														<tbody>
+															<tr class="odd">
+																<td>0</td>
+																<td>
+																	<section class="edit_select_vm true_false top_drop">
+																		<div>
+																			<nav>
+																				<ul>
+																					<li><a href="#">True<img src="images/DownArrow_Icon.png" alt="carat symbol for drop down decoration"/></a>
+																						<ul>
+																							<li><a href="#">False</a></li>
+																						</ul>
+																					</li>
+																				</ul>
+																			</nav>
+																		</div>	
+																	</section>
+																</td>
+																<td>
+																	<section class="edit_select_vm nic_network top_drop">
+																		<div>
+																			<nav>
+																				<ul>
+																					<li><a href="#">vmservice-trend-pg<img src="images/DownArrow_Icon.png" alt="carat symbol for drop down decoration"/></a>
+																						<ul>
+																							<li><a href="#">vmservice-trend-pg</a></li>
+																							<li><a href="#">vmservice-trend-pg</a></li>
+																						</ul>
+																					</li>
+																				</ul>
+																			</nav>
+																		</div>	
+																	</section>
+																</td>
+																<td>
+																	<section class="edit_select_vm true_false top_drop">
+																		<div>
+																			<nav>
+																				<ul>
+																					<li><a href="#">True<img src="images/DownArrow_Icon.png" alt="carat symbol for drop down decoration"/></a>
+																						<ul>
+																							<li><a href="#">False</a></li>
+																						</ul>
+																					</li>
+																				</ul>
+																			</nav>
+																		</div>	
+																	</section>
+																</td>
+																<td>
+																	<section class="edit_select_vm nic_ip_mode top_drop">
+																		<div>
+																			<nav>
+																				<ul>
+																					<li><a href="#">DHCP<img src="images/DownArrow_Icon.png" alt="carat symbol for drop down decoration"/></a>
+																						<ul>
+																							<li><a href="#">IP Pool</a></li>
+																							<li><a href="#">IP Pool</a></li>
+																						</ul>
+																					</li>
+																				</ul>
+																			</nav>
+																		</div>	
+																	</section>
+																</td>
+																<td class="vm_edit_input_field">
+																	<form>
+																		<input type="text"/>
+																	</form>
+																</td>
+																<td class="table_action_a"><a href="#">Modify</a></td>
+																<td class="table_action_a"><a href="#">Delete</a></td>
+															</tr>
+															<tr class="even">
+																<td>0</td>
+																<td>
+																	<section class="edit_select_vm true_false">
+																		<div>
+																			<nav>
+																				<ul>
+																					<li><a href="#">True<img src="images/DownArrow_Icon.png" alt="carat symbol for drop down decoration"/></a>
+																						<ul>
+																							<li><a href="#">False</a></li>
+																						</ul>
+																					</li>
+																				</ul>
+																			</nav>
+																		</div>	
+																	</section>
+																</td>
+																<td>
+																	<section class="edit_select_vm nic_network">
+																		<div>
+																			<nav>
+																				<ul>
+																					<li><a href="#">vmservice-trend-pg<img src="images/DownArrow_Icon.png" alt="carat symbol for drop down decoration"/></a>
+																						<ul>
+																							<li><a href="#">vmservice-trend-pg</a></li>
+																							<li><a href="#">vmservice-trend-pg</a></li>
+																						</ul>
+																					</li>
+																				</ul>
+																			</nav>
+																		</div>	
+																	</section>
+																</td>
+																<td>
+																	<section class="edit_select_vm true_false">
+																		<div>
+																			<nav>
+																				<ul>
+																					<li><a href="#">True<img src="images/DownArrow_Icon.png" alt="carat symbol for drop down decoration"/></a>
+																						<ul>
+																							<li><a href="#">False</a></li>
+																						</ul>
+																					</li>
+																				</ul>
+																			</nav>
+																		</div>	
+																	</section>
+																</td>
+																<td>
+																	<section class="edit_select_vm nic_ip_mode">
+																		<div>
+																			<nav>
+																				<ul>
+																					<li><a href="#">DHCP<img src="images/DownArrow_Icon.png" alt="carat symbol for drop down decoration"/></a>
+																						<ul>
+																							<li><a href="#">IP Pool</a></li>
+																							<li><a href="#">IP Pool</a></li>
+																						</ul>
+																					</li>
+																				</ul>
+																			</nav>
+																		</div>	
+																	</section>
+																</td>
+																<td class="vm_edit_input_field">
+																	<form>
+																		<input type="text"/>
+																	</form>
+																</td>
+																<td class="table_action_a"><a href="#">Modify</a></td>
+																<td class="table_action_a"><a href="#">Delete</a></td>
+															</tr>
+														</tbody>
+													</table>
+													<div class="full_span_div edit_nics_save">
+														<div id="nic_create">
+															<span><a href="#"><img src="images/Plus_Icon_Smaller.png" alt="add NIC"/>Add NIC</a></span>
+														</div>
+														<button class="save_edits_button"><a href="#">Save Edits</a></button>
+													</div>
+												</div>
+
+
+
+												<!--GUEST OS CUSTOMIZATION SECTION OF EDIT VM-->
+												<!--broken into 3 sections naturally based on the layout-->
+												<!--====================================================-->
+												<div class="vm_edit_guest">
+													<!--general information section of guest os customization-->
+													<div class="full_span_div vm_underline edit_guest_general">
+														<span class="vm_edit_title">General</span>
+														<div class="half_span_div spacing_side">
+															<div class="vm_edit_sub_title">
+																<form>
+																	<input type="checkbox"/>
+																	<span>Enable Guest Customization</span>
+																</form>
+															</div>
+															<p>The computer name and network settings configured for this VM are applied to its Guest OS when the VM is powered on. The following settings are only applied the 1st time the VM is powered on or if "Power on and Force Recustomization" is performed: Change SID, Password Reset, Join Domain and Customization Script. Guest customization should not be enabled if the VM uses Guest Properties for customization.</p>
+														</div>
+														<div class="half_span_div">
+															<div class="vm_edit_sub_title">
+																<form>
+																	<input type="checkbox"/>
+																	<span>Change SID</span>
+																</form>
+															</div>
+															<p>Selecting this will run sysprep on the first boot. This is applicable for Windows VMs and will run Sysprep to change Windows SID. On Windows NT, VCD uses Sidgen. Running sysprep is a prerequisite for completing domain join.</p>
+														</div>
+													</div>
+
+													<!--password reset section of guest os customization-->
+													<div class="full_span_div vm_underline edit_guest_password">
+														<span class="vm_edit_title">Password Reset</span>
+														<div class="full_span_div">
+															<div class="half_span_div spacing_side vm_edit_sub_title">
+																<form>
+																	<input type="checkbox"/>
+																	<span>Allow local administrator password</span>
+																</form>
+															</div>
+															<div class="half_span_div vm_edit_sub_title">
+																<form>
+																	<input type="checkbox"/>
+																	<span>Require administrator to change password on first login</span>
+																</form>
+															</div>
+														</div>
+														<div class="full_span_div">
+															<form>
+																<input type="radio" name="psword" value="auto"/>
+																<span id="first_psword_radio">Auto generate password</span>
+																<input type="radio" name="psword" value="specify"/>
+																<span id="second_psword_radio">Specify password</span>
+																<input type="password" id="special_case_vm_input"/>
+															</form>
+														</div>
+													</div>
+
+													<!--join domain section of guest os customization-->
+													<div class="full_span_div edit_guest_domain">
+														<span class="vm_edit_title ">Join Domain</span>
+														<div class="full_span_div vm_edit_sub_title">
+															<form>
+																<input type="checkbox"/>
+																<span>Enable this VM to join a domain</span>
+															</form>
+														</div>
+														<div class="full_span_div vm_edit_sub_title">
+															<span class="quarter_span quarter_spacing">Domain Name<span class="star_color"> *</span></span>
+															<span class="quarter_span quarter_spacing">User Name<span class="star_color"> *</span></span>
+															<span class="quarter_span quarter_spacing">Password<span class="star_color"> *</span></span>
+															<span class="quarter_span">Account Organizational Unit</span>
+														</div>
+														<div class="full_span_div vm_edit_input_field">
+															<form class="quarter_span quarter_spacing">
+																<input type="text"/>
+															</form>
+															<form class="quarter_span quarter_spacing">
+																<input type="text"/>
+															</form>
+															<form class="quarter_span quarter_spacing">
+																<input type="text"/>
+															</form>
+															<form class="quarter_span">
+																<input type="text"/>
+															</form>
+														</div>
+													</div>
+
+													<!--save button found on section of guest os customization-->
+													<div class="full_span_div edit_guest_save">
+														<button class="save_edits_button"><a href="#">Save Edits</a></button>
+													</div>
+												</div>
+
+
+
+
+
+
+												<div class="vm_edit_advanced">
+													<div class="vm_edit_advanced_navigation full_span_div">
+														<ul>
+															<li><a href="#">Upgrade VMware Tools</a></li>
+															<li><a href="#">Upgrade Virtual Hardware</a></li>
+															<li><a href="#">Mount Image (ISO) from Catalog</a></li>
+															<li><a href="#">Enable/Disable Monitoring</a></li>
+														</ul>
+													</div>
+													<div>
+
+													</div>
+													<div>
+
+													</div>
+													<div>
+
+													</div>
+													<div>
+
+													</div>
+												</div>
+											</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+											<!--VM CONSOLE, second displayed section below action buttons-->
+											<section class="vm_row_section vm_console">
+												<div>
+													<div id="vm_drop_content_left">
+														<div>
+															<img src="images/Console_Icon.png" alt="vm count"/>
+															<dl>
+																<dt>Console</dt>
+																<dd>Impotunus</dd>
+															</dl>
+														</div>
+													</div>
+													<div  id="vm_drop_content_right">
+														<div>
+															<dl>
+																<dt>VM ID</dt>
+																<dd>Impotunus</dd>
+															</dl>
+														</div>
+														<div>
+															<dl>
+																<dt>VM Tools</dt>
+																<dd>Impotunus</dd>
+															</dl>
+														</div>
+														<div>
+															<dl>
+																<dt>VM Hardware Version</dt>
+																<dd><time datetime="2014-05-27">05/27/2014</time></dd>
+															</dl>
+														</div>
+														<div>
+															<dl>
+																<dt>vCPU Hot Add</dt>
+																<dd>False</dd>
+															</dl>
+														</div>
+														<div>
+															<dl>
+																<dt>vRAM Hot Add</dt>
+																<dd>True</dd>
+															</dl>
+														</div>
+														<div>
+															<dl>
+																<dt>Admin Password</dt>
+																<dd id="show_password"><a href="#">Show Password >></a></dd>
+															</dl>
+														</div>
+													</div>
+												</div>
+											</section>
+
+											<!--NETWORK DETAILS OF VM, contains table-->
+											<section class="vm_row_section vm_network">
+												<div class="block_header">
+													<a href="#"><img src="images/Expand_Arrow.png"/>Network Details</a>
+												</div>
+												<div class="vm_drop_down">
+													<table id="vm_network_table">
+														<colgroup><col id="network_col_id"/><col id="network_col_status"/><col id="network_col_mac"/><col id="network_col_net"/><col id="network_col_primary"/></colgroup>
+														<thead>
+															<th class="thead_selected" id="table_network_id"><a href="#">NIC ID<img src="images/DownArrow_Icon.png" alt="drop arrow"/></a></th>
+															<th class="thead_selected" id="table_network_status"><a href="#">Status<img src="images/DownArrow_Icon.png" alt="drop arrow"/></a></th>
+															<th class="thead_selected" id="table_network_mac"><a href="#">MAC Address<img src="images/DownArrow_Icon.png" alt="drop arrow"/></a></th>
+															<th class="thead_selected" id="table_network_network"><a href="#">Network<img src="images/DownArrow_Icon.png" alt="drop arrow"/></a></th>
+															<th class="thead_selected" id="table_network_primary"><a href="#">Primary<img src="images/DownArrow_Icon.png" alt="drop arrow"/></a></th>
+														</thead>
+														<tbody>
+															<tr class="odd">
+																<td id="">13</td>
+																<td id="">Connected</td>
+																<td id="">00:50:56:01:03:0a</td>
+																<td id="">dy2storg71-internal</td>
+																<td id="">Yes</td>
+															</tr>
+															<tr class="even">
+																<td id="">10</td>
+																<td id="">Disconnected</td>
+																<td id="">03:50:47:01:03:0b</td>
+																<td id="">ey9stprg72-internal</td>
+																<td id="">Yes</td>
+															</tr>
+															<tr class="odd">
+																<td id="">9</td>
+																<td id="">Disconnected</td>
+																<td id="">10:50:56:01:03:0c</td>
+																<td id="">dy2storg15-internal</td>
+																<td id="">No</td>
+															</tr>
+															<tr class="even">
+																<td id="">4</td>
+																<td id="">Connected</td>
+																<td id="">20:50:56:01:03:0a</td>
+																<td id="">dy8lporg20-external</td>
+																<td id="">Yes</td>
+															</tr>
+															<tr class="odd">
+																<td id="">2</td>
+																<td id="">Connected</td>
+																<td id="">01:50:56:01:03:0d</td>
+																<td id="">yp3storg87-internal</td>
+																<td id="">No</td>
+															</tr>
+														</tbody>
+														<!--footer controls the navigation of the table, ids for all buttons, especially previous and next-->
+														<tfoot>
+															<tr>
+																<td colspan="5">
+																	<ul class="table_nav">
+																		<li id="network_prev"><a href="">< Previous</a></li>
+																		<li id="network_nav_1"><a href="">1</a></li>
+																		<li id="network_nav_2"><a href="">2</a></li>
+																		<li id="network_nav_3"><a href="">3</a></li>
+																		<li id="network_nav_4"><a href="">4</a></li>
+																		<li id="network_nav_5"><a href="">5</a></li>
+																		<li>...</li>
+																		<li id="network_nav_20"><a href="">20</a></li>
+																		<li id="network_next"><a href="">Next ></a></li>
+																	</ul>
+																</td>
+															</tr>
+														</tfoot>
+													</table>
+												</div>
+											</section>
+											
+											<!--STORAGE DETAILS OF VM, contains storage table-->
+											<section class="vm_row_section vm_storage">
+												<div class="block_header">
+													<a href="#"><img src="images/Expand_Arrow.png"/>Storage Details</a>
+												</div>
+												<div class="vm_drop_down vm_storage_content">
+													<dl>
+														<dt>Storage Type</dt>
+														<dd>Non-Replicated SAN</dd>
+													</dl>
+												</div>
+												<div class="vm_drop_down">
+													<table id="vm_storage_table">
+														<colgroup><col id="storage_col_name"/><col id="storeage_col_size"/><col id="storage_col_scsi"/></colgroup>
+														<thead>
+															<th class="thead_selected" id="table_storage_disk"><a href="#">Disk Name<img src="images/DownArrow_Icon.png" alt="drop arrow"/></a></th>
+															<th class="thead_selected" id="table_storage_size"><a href="#">Size<img src="images/DownArrow_Icon.png" alt="drop arrow"/></a></th>
+															<th class="thead_selected" id="table_storage_id"><a href="#">SCSI Identifier<img src="images/DownArrow_Icon.png" alt="drop arrow"/></a></th>
+														</thead>
+														<tbody>
+															<tr class="odd">
+																<td>Disk 13</td>
+																<td>40 GB</td>
+																<td>0:14</td>
+															</tr>
+															<tr class="even">
+																<td>Disk 10</td>
+																<td>30 GB</td>
+																<td>0:50</td>
+															</tr>
+															<tr class="odd">
+																<td>Disk 9</td>
+																<td>15 GB</td>
+																<td>0:25</td>
+															</tr>
+															<tr class="even">
+																<td>Disk 4</td>
+																<td>50 GB</td>
+																<td>0:34</td>
+															</tr>
+															<tr class="odd">
+																<td>Disk 2</td>
+																<td>80 GB</td>
+																<td>0:13</td>
+															</tr>
+														</tbody>
+														<!--footer controls the navigation of the table, ids for all buttons, especially previous and next-->
+														<tfoot>
+															<tr>
+																<td colspan="3">
+																	<ul class="table_nav">
+																		<li id="storage_prev"><a href="">< Previous</a></li>
+																		<li id="storage_nav_1"><a href="">1</a></li>
+																		<li id="storage_nav_2"><a href="">2</a></li>
+																		<li id="storage_nav_3"><a href="">3</a></li>
+																		<li id="storage_nav_4"><a href="">4</a></li>
+																		<li id="storage_nav_5"><a href="">5</a></li>
+																		<li>...</li>
+																		<li id="storage_nav_20"><a href="">20</a></li>
+																		<li id="storage_next"><a href="">Next ></a></li>
+																	</ul>
+																</td>
+															</tr>
+														</tfoot>
+													</table>
+												</div>
+											</section>
+
+											<!--PRODUCT SECTION OF VM, contains users product information-->
+											<section class="vm_row_section vm_product">
+												<div class="block_header">
+													<a href="#"><img src="images/Expand_Arrow.png"/>Product Subscriptions</a>
+												</div>
+												<div class="vm_drop_down" id="vm_product_drop">
+													<ul>
+														<li>
+															<dl>
+																<dt>Public Cloud Services</dt>
+																<dd>Little Rock - WM</dd>
+															</dl>
+														</li>
+														<li>
+															<dl>
+																<dt>Patch Management</dt>
+																<dd>All OSes</dd>
+															</dl>
+														</li>
+														<li>
+															<dl>
+																<dt>Windows</dt>
+																<dd>OS Management</dd>
+															</dl>
+														</li>
+													</ul>
+												</div>
+											</section>
+											
+											<!--ADVANCED SECTION OF VM, contains advanced action buttons-->
+											<section class="vm_row_section vm_advanced">
+												<div class="block_header">
+													<a href="#"><img src="images/Expand_Arrow.png"/>Advanced Actions</a>
+												</div>
+												<div class="vm_drop_down" id="vm_advanced_content">
+													<div id="advanced_section_wrapper">
+														<div><button class="vm_button" id="vm_button_adv_1"><a href="#">Lorem</a></button></div>
+														<div><button class="vm_button" id="vm_button_adv_2"><a href="#">Ipsum</a></button></div>
+														<div><button class="vm_button" id="vm_button_adv_3"><a href="#">Delete VM</a></button></div>
+														<div><button class="vm_button" id="vm_button_adv_4"><a href="#">Clone VM</a></button></div>
+														<div>
+															<div class="select_advanced">
+																<ul>
+																	<li class="evdc_advanced_options"><a href="#"><img src="images/Screen_Placeholder.png"/ id="adv_screen_img">11 Giraffe 01<img src="images/DownArrow_Icon.png" alt="carat symbol for drop down decoration"/></a>
+																		<ul>
+																			<li><a href="#">11 Giraffe 01</a></li>
+																			<li><a href="#">11 Giraffe 01</a></li>
+																			<li><a href="#">11 Giraffe 01</a></li>
+																		</ul>
+																	</li>
+																</ul>	
+															</div>
+														</div>
+													</div>
+												</div>
+											</section>
+										</div>
+									</td>
+								</tr>
+
+								<tr class="odd main_row">
+									<td><img src="images/Compress_Arrow.png"/>Canley</td>
+									<td>Bropper</td>
+									<td><img src="images/Mac_Icon_Half.png"/><img src="images/RedHat_Icon_Half.png"/><img src="images/MicrosoftWindows_Icon_Half.png"/></td>
+									<td>Starting</td>
+									<td>43</td>
+									<td>Vindico</td>
+									<td>502 GB</td>
+									<td>50.155.36.228</td>
+									<td><img src="images/ClosedEye_Icon.png"/></td>
+									<td>Managed</td>
+								</tr>
+								<tr class="even main_row">
+									<td><img src="images/Compress_Arrow.png"/>Canley</td>
+									<td>Bropper</td>
+									<td><img src="images/Linux_Icon_Full.png"/></td>
+									<td>Starting</td>
+									<td>9</td>
+									<td>Vindico</td>
+									<td>502 GB</td>
+									<td>50.155.36.228</td>
+									<td><img src="images/Eye_Icon.png"/></td>
+									<td>Unmanaged</td>
+								</tr>
+								<tr class="odd main_row">
+									<td><img src="images/Compress_Arrow.png"/>Canley</td>
+									<td>Bropper</td>
+									<td><img src="images/Linux_Icon_Full.png"/><img src="images/Windows8_Icon_Half.png"/></td>
+									<td>Starting</td>
+									<td>72</td>
+									<td>Vindico</td>
+									<td>502 GB</td>
+									<td>50.155.36.228</td>
+									<td><img src="images/Eye_Icon.png"/></td>
+									<td>UnManaged</td>
+								</tr>
+								<tr class="even main_row">
+									<td><img src="images/Compress_Arrow.png"/>Canley</td>
+									<td>Bropper</td>
+									<td><img src="images/Windows8_Icon_Full.png"/><img src="images/MicrosoftWindows_Icon_Full.png"/></td>
+									<td>Starting</td>
+									<td>12</td>
+									<td>Vindico</td>
+									<td>502 GB</td>
+									<td>50.155.36.228</td>
+									<td><img src="images/ClosedEye_Icon.png"/></td>
+									<td>Unmanaged</td>
+								</tr>
+								<tr class="odd main_row">
+									<td><img src="images/Compress_Arrow.png"/>Canley</td>
+									<td>Bropper</td>
+									<td><img src="images/Windows8_Icon_Half.png"/><img src="images/RedHat_Icon_Half.png"/><img src="images/MicrosoftWindows_Icon_Half.png"/></td>
+									<td>Starting</td>
+									<td>67</td>
+									<td>Vindico</td>
+									<td>502 GB</td>
+									<td>50.155.36.228</td>
+									<td><img src="images/Eye_Icon.png"/></td>
+									<td>Managed</td>
+								</tr>
+								<tr class="even main_row">
+									<td><img src="images/Compress_Arrow.png"/>Canley</td>
+									<td>Bropper</td>
+									<td><img src="images/RedHat_Icon_Half.png"/></td>
+									<td>Starting</td>
+									<td>90</td>
+									<td>Vindico</td>
+									<td>502 GB</td>
+									<td>50.155.36.228</td>
+									<td><img src="images/Eye_Icon.png"/></td>
+									<td>Unmanaged</td>
+								</tr>
+								<tr class="odd main_row">
+									<td><img src="images/Compress_Arrow.png"/>Canley</td>
+									<td>Bropper</td>
+									<td><img src="images/Mac_Icon_Full.png"/><img src="images/RedHat_Icon_Full.png"/><img src="images/MicrosoftWindows_Icon_Full.png"/></td>
+									<td>Starting</td>
+									<td>5</td>
+									<td>Vindico</td>
+									<td>502 GB</td>
+									<td>50.155.36.228</td>
+									<td><img src="images/ClosedEye_Icon.png"/></td>
+									<td>Managed</td>
+								</tr>
+								<tr class="even main_row">
+									<td><img src="images/Compress_Arrow.png"/>Canley</td>
+									<td>Bropper</td>
+									<td><img src="images/Mac_Icon_Full.png"/></td>
+									<td>Starting</td>
+									<td>56</td>
+									<td>Vindico</td>
+									<td>502 GB</td>
+									<td>50.155.36.228</td>
+									<td><img src="images/Eye_Icon.png"/></td>
+									<td>Managed</td>
+								</tr>
+							</tbody>
+							<!--footer controls the navigation of the table, ids for all buttons, especially previous and next-->
+							<tfoot>
+								<tr>
+									<td colspan="10">
+										<ul class="table_nav">
+											<li id="table_prev"><a href="">< Previous</a></li>
+											<li id="table_nav_1"><a href="">1</a></li>
+											<li id="table_nav_2"><a href="">2</a></li>
+											<li id="table_nav_3"><a href="">3</a></li>
+											<li id="table_nav_4"><a href="">4</a></li>
+											<li id="table_nav_5"><a href="">5</a></li>
+											<li>...</li>
+											<li id="table_nav_20"><a href="">20</a></li>
+											<li id="table_next"><a href="">Next ></a></li>
+										</ul>
+									</td>
+								</tr>
+							</tfoot>
+						</table>
+					</section>
+				</section>
+			</div>
+		</main>
+
+		<footer>
+			<!--Footer navigation of the page-->
+			<div class="container">
+				<ul>
+					<li><a href="#">Terms & Conditions</a></li>
+					<li>|</li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li>|</li>
+					<li><a href="#">Sitemap</a></li>
+					<li>|</li>
+					<li><a href="#">Home</a></li>
+				</ul>
+				<ul>
+					<li>&copy;2014 Windstream</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>
+

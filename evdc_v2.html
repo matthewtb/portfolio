@@ -1,0 +1,526 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>navigator</title>
+		<link rel="stylesheet" type="text/css" href="styles/stream_style_9.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/evdc_style_v2.css"/>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'/>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<link rel="shortcut icon" href="images/windstream_favicon.ico"/>
+	</head>
+	<body>
+		<header>
+		
+			<section class="top">
+				<div class="header_wrapper">
+					<div class="container">
+						<div id="top_left">
+							<a href="#"><img src="images/Logo.png" alt="windstream logo"/></a>
+						</div>
+						<section id="top_right">
+							<div id="org_user_wrapper">
+								<div id="styled_user">
+									<ul>
+										<li id="organization"><a href="#">Select Organization<img src="images/drop_menu.png" alt="carat symbol for drop down decoration"/></a>
+											<ul>
+												<li><a href="#">Select Organization</a></li>
+												<li><a href="#">Select Organization</a></li>
+												<li><a href="#">Select Organization</a></li>
+											</ul>
+										</li>
+
+										<li id="user"><a href="#">Matthew Trilby-Bassett<img src="images/drop_menu.png" alt="carat symbol for drop down decoration"/></a>
+											<ul>
+												<li><a href="#">Edit Profile</a></li>
+												<li><a href="#">Settings</a></li>
+												<li><a href="#">Logout</a></li>
+											</ul>
+										</li>
+									</ul>	
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+			<!--navigation construction-->
+			<section class="navigation">
+				<div class="header_wrapper">
+					<nav class="container">
+						<ul>
+							<li><a href="#">monitoring</a>
+								<ul>
+									<li><a href="#">Summary View</a></li>
+									<li id="wide"><a href="#">Device Monitoring Dashboard</a></li>
+									<li><a href="#">Reports</a></li>
+									<li><a href="#">Activity Log</a></li>
+								</ul>
+							</li>
+							<li><a href="#">services</a>
+								<ul>
+									<li id="wide"><a href="#">Cloud Virtual Data Centers</a></li>
+									<li><a href="#">Storage</a></li>
+									<li><a href="#">DRaaS</a></li>
+									<li><a href="#">Load Balancing</a></li>
+									<li><a href="#">DNS</a></li>
+									<li><a href="#">Cloud Migrations</a></li>
+									<li><a href="#">Object Stores</a></li>
+								</ul>
+							</li>
+							<li><a href="#">security</a>
+								<ul>
+									<li><a href="#">Firewalls</a></li>
+									<li><a href="#">VPNs</a></li>
+									<li><a href="#">DDoS Defence</a></li>
+									<li><a href="#">Cloud AV</a></li>
+								</ul>
+							</li>
+							<li><a href="#">support</a>
+								<ul>
+									<li><a href="#">Contacts</a></li>
+									<li><a href="#">Tickets</a></li>
+									<li><a href="#">Forms</a></li>
+									<li><a href="#">Announcements</a></li>
+									<li><a href="#">Documents</a></li>
+									<li><a href="#">How To</a></li>
+									<li><a href="#">FAQs</a></li>
+								</ul>
+							</li>
+							<li><a href="#">account</a>
+								<ul>
+									<li><a href="#">Account Settings</a></li>
+									<li><a href="#">Permissions</a></li>
+									<li><a href="#">Escalation</a></li>
+									<li><a href="#">Billing</a></li>
+									<li><a href="#">Notifications</a></li>
+									<li><a href="#">Users</a></li>
+									<li><a href="#">Sub Accounts</a></li>
+									<li><a href="#">API</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+			<!--breadcrumb navigation section-->
+			<!--includes the new evdc selector styled to allow consistency across browsers-->
+			<section class="breadcrumb">
+				<div class="header_wrapper">
+					<div class="container">
+						<ul class="container_evdc_breadcrumb">
+							<li><a href="#">Home ></a></li>
+							<li><a href="#">EVDC</a></li>
+						</ul>
+						<div class="select_evdc">
+							<ul>
+								<li><span>Select EVDC</span></li>
+
+								<li class="evdc_options"><a href="#">11 Giraffe 01<img src="images/DownArrow_Icon.png" alt="carat symbol for drop down decoration"/></a>
+									<ul>
+										<li><a href="#">11 Giraffe 01</a></li>
+										<li><a href="#">11 Giraffe 01</a></li>
+										<li><a href="#">11 Giraffe 01</a></li>
+									</ul>
+								</li>
+							</ul>	
+						</div>
+					</div>
+				</div>
+				
+			</section>
+
+			<!--error feedback section-->
+			<!--hidden class hides the box-->
+			<section class="feedback hidden">
+				<div class="header_wrapper">
+					<div class="container">
+						<p><img src="images/confirm.png" alt="green check to show confirmation"/> Confirmation or <img src="images/error.png" alt="red exclamation point to show error"/> Error Feedback</p>
+					</div>
+				</div>
+			</section>
+
+		</header>
+
+		<main>
+			<div class="container">
+
+				<section class="evdc_page_content">
+					
+					<!--Virtual Machine Section-->
+					<!--includes tags for jscript on <li>-->
+					<section class="evdc_rectangle evdc_medium" id="virtual_machine">
+						<div class="block_header block_header_wide">
+							<img src="images/VirtualMachines_Icon.png" alt="Virtual Machines"/>
+							<h2><a href="#">Virtual Machines</a></h2>
+						</div>
+						<ul id="chart_vm">
+							<li>
+								<ul id="cat_vm">
+									<li>Running</li>
+									<li>Suspended</li>
+									<li>Stopped</li>
+								</ul>
+							</li>
+							<li>
+								<ul id="val_vm">
+									<li id="vm_running">6</li>
+									<li id="vm_suspend">5</li>
+									<li id="vm_stopped">7</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+
+					<!--Catalogs Section-->
+					<!--includes tags for jscript on <li>-->					
+					<section class="evdc_rectangle evdc_medium" id="catalogs">
+						<div class="block_header">
+							<img src="images/Catalogs_Icon.png" alt="Catalogs"/>
+							<h2><a href="#">Catalogs</a></h2>
+						</div>
+						<ul id="chart_catalog">
+							<li>
+								<ul id="cat_catalog">
+									<li>Public Objects</li>
+									<li>Private Objects</li>
+								</ul>
+							</li>
+							<li>
+								<ul id="val_catalog">
+									<li id="cat_public_obj">24</li>
+									<li id="cat_private_obj">6</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+
+					<!--Storage Section-->
+					<!--includes tags for jscript for the chart if needed-->
+					<section class="evdc_rectangle evdc_square_tall" id="Storage">
+						<div class="block_header">
+							<img src="images/Storage_Icon.png" alt="Storage"/>
+							<h2><a href="#">Storage</a></h2>
+						</div>
+
+						<div id="chart_storage"><img src="images/storage-graph.png"/></div>
+
+					</section>
+
+					<!--Nested Section for vCloud and Cloud AV-->
+					<!--includes vCloud and Cloud AV-->
+					<section class="evdc_rectangle_holder">
+
+						<!--Cloud AV-->
+						<section class="evdc_rectangle evdc_small_one" id="cloudAv">
+							<div class="block_header">
+								<img src="images/CloudAV_Icon.png" alt="Cloud AV"/>
+								<h2><a href="#">Cloud AV</a></h2>
+							</div>
+							<div id="content_cloudAv">
+								<span>Manage your Cloud AV service.</span>
+							</div>
+						</section>
+
+						<!--Cloud Migrations-->
+						<section class="evdc_rectangle evdc_small_two" id="vCloud">
+							<div class="block_header block_header_wide">
+								<img src="images/CloudMigrations_Icon.png" alt="Cloud Migrations"/>
+								<h2><a href="#">Cloud Migrations</a></h2>
+							</div>
+							<div id="content_vCloud">
+								<span>Automatically migrate your servers to the Windstream Cloud.</span>
+							</div>
+						</section>
+					</section>
+
+					<!--Firewall Section-->
+					<!--includes tags for jscript on <li>-->
+					<section class="evdc_rectangle evdc_square" id="Firewall">
+						<div class="block_header">
+							<img src="images/Firewall_Icon.png" alt="Firewall"/>
+							<h2><a href="#">Firewall</a></h2>
+						</div>
+						<ul id="chart_firewall">
+							<li>
+								<ul id="cat_firewall">
+									<li>Rules</li>
+									<li>NATS</li>
+									<li>Outside IP</li>
+									<li>Inside IP(s)</li>
+								</ul>
+							</li>
+							<li>
+								<ul id="val_firewall">
+									<li id="fire_rules">12</li>
+									<li id="fire_nats">8</li>
+									<li id="fire_outside">63.2.1.</li>
+									<li id="fire_ip_1">10.10.10.1,</li>
+									<li id="fire_ip_2">10.10.20.1,</li>
+									<li id="fire_ip_3">10.10.30.1,</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+
+					<!--Load Balancer Section-->
+					<!--includes tags for jscript on <li>-->
+					<section class="evdc_rectangle evdc_square" id="load_balancer">
+						<div class="block_header">
+							<img src="images/LoadBalancer_Icon.png" alt="Load Balancers"/>
+							<h2><a href="#">Load Balancers</a></h2>
+						</div>
+						<ul id="chart_load">
+							<li>
+								<ul id="cat_load">
+									<li>Instacnes</li>
+									<li>VIPs</li>
+									<li>Pools</li>
+									<li>Members</li>
+								</ul>
+							</li>
+							<li>
+								<ul id="val_load">
+									<li id="load_instances">2</li>
+									<li id="load_vips">4</li>
+									<li id="load_pools">2</li>
+									<li id="load_members">3</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+
+					<!--NETWORKS TABLE-->
+					<!--includes tags for jscript on <li>-->
+					<section class="evdc_rectangle evdc_wide" id="networks">
+						<div class="block_header">
+							<img src="images/Networks_Icon.png" alt="Networks Table"/>
+							<h2><a href="#">Networks</a></h2>
+						</div>
+						<table class="evdc_page_table">
+
+							<!--these are the control ids for the column widths and styles-->
+							<colgroup><col id="col_name"/><col id="col_ipRange"/><col id="col_created"/></colgroup>
+
+							<!--col titles and links-->
+							<thead>
+								<th id="net_thead_name"><a href="#">Name<img src="images/DownArrow_Icon.png" alt="drop arrow"/></a></th>
+								<th id="net_thead_ip"><a href="#">IP Range<img src="images/DownArrow_Icon.png" alt="drop arrow"/></a></th>
+								<th id="net_thead_created"><a href="#">Created<img src="images/DownArrow_Icon.png" alt="drop arrow"/></a></th>
+							</thead>
+
+							<!--body section, holds content and ids for individual content-->
+							<tbody>
+								<tr class="odd">
+									<td id="net_row_1_name">Lorem Ipsum</td>
+									<td id="net_row_1_ip">10.10.10.1 - 09.01.12.354</td>
+									<td id="net_row_1_created"><time datetime="2014-01-13">01/13/2014</time></td>
+								</tr>
+								<tr class="even">
+									<td id="net_row_2_name">Dolore Occaecat</td>
+									<td id="net_row_2_ip">10.10.10.1 - 09.01.12.354</td>
+									<td id="net_row_2_created"><time datetime="2014-01-13">01/13/2014</time></td>
+								</tr>
+								<tr class="odd">
+									<td id="net_row_3_name">Excepteur Prodient</td>
+									<td id="net_row_3_ip">10.10.10.1 - 09.01.12.354</td>
+									<td id="net_row_3_created"><time datetime="2014-01-13">01/13/2014</time></td>
+								</tr>
+								<tr class="even">
+									<td id="net_row_4_name">Incididunt Adipise</td>
+									<td id="net_row_4_ip">10.10.10.1 - 09.01.12.354</td>
+									<td id="net_row_4_created"><time datetime="2014-01-13">01/13/2014</time></td>
+								</tr>
+								<tr class="odd">
+									<td id="net_row_5_name">Labore Dolore</td>
+									<td id="net_row_5_ip">10.10.10.1 - 09.01.12.354</td>
+									<td id="net_row_5_created"><time datetime="2014-01-13">01/13/2014</time></td>
+								</tr>
+							</tbody>
+
+							<!--footer controls the navigation of the table, ids for all buttons, especially previous and next-->
+							<tfoot>
+								<tr>
+									<td colspan="3">
+										<ul class="table_nav">
+											<li id="network_prev"><a href="">< Previous</a></li>
+											<li id="network_nav_1"><a href="">1</a></li>
+											<li id="network_nav_2"><a href="">2</a></li>
+											<li id="network_nav_3"><a href="">3</a></li>
+											<li id="network_nav_4"><a href="">4</a></li>
+											<li id="network_nav_5"><a href="">5</a></li>
+											<li>...</li>
+											<li id="network_nav_20"><a href="">20</a></li>
+											<li id="network_next"><a href="">Next ></a></li>
+										</ul>
+									</td>
+								</tr>
+							</tfoot>
+						</table>
+					</section>
+				</section>
+
+				<!--Nested Section for EVDC STATISTICS GRAPH and BANDWIDTH GRAPH-->
+				<!--includes EVDC STATISTICS and BANDWIDTH-->
+				<section class="evdc_page_graphs">
+					
+					<!--EVDC STATISTICS-->
+					<section class="evdc_rectangle evdc_small_graph" id="evdc_statistics">
+						<div class="block_header">
+							<img src="images/evdc.png" alt="EVDC Statistics"/>
+							<h2><a href="#">EVDC Statistics</a></h2>
+						</div>
+						<div id="evdc_stat_graphs">
+							<ul>
+								<li id="evdc_stat_graphs_left"><img src="images/evdc-stat-vcpu.png"/></li>
+								<li id="evdc_stat_graphs_right"><img src="images/evdc-stat-vmemory.png"/></li>
+							</ul>
+						</div>
+						<div id="content_evdc_stat">
+							<span>Usage statistics are updated every 60 minutes</span>
+						</div>
+					</section>
+					
+					<!--BANDWIDTH-->
+					<section class="evdc_rectangle evdc_large_graph" id="evdc_bandwidth">
+						<div class="block_header">
+							<img src="images/Bandwidth_Icon.png" alt="EVDC Bandwidth"/>
+							<h2><a href="#">Bandwidth</a></h2>
+						</div>
+						<div id="evdc_bandwidth_graph">
+							<img src="images/Bandwidth_Placeholder_Graph.png"/>
+						</div>
+						<div id="content_evdc_band">
+							<span>Bandwidth statistics are updated every 10 minutes</span>
+						</div>
+					</section>
+				</section>
+
+				<!--ALERTS TABLE SECTION-->
+				<!--includes tags for jscript on necessary elements-->
+				<section class="evdc_page_table">
+					<section class="evdc_rectangle evdc_table" id="alerts_table">
+						
+						<!--title section of the alerts table-->
+						<div class="block_header">
+							<img src="images/Alerts_Icon.png" alt="Alerts Table"/>
+							<h2 id="alerts_title_patch"><a href="#">Alerts</a></h2>
+
+							<!--this section is for external functions such as print-->
+							<div id="alerts_function_icons">
+								<a href="#" id="alerts_pdf"><img src="images/PDF_Icon.png" alt="PDF"/></a>
+								<a href="#" id="alerts_csv"><img src="images/CSV_Icon.png" alt="CSV"/></a>
+								<a href="#" id="alerts_expand"><img src="images/Expand_Icon.png" alt="Expand"/></a>
+							</div>
+						</div>
+
+						<!--search field section of the table-->
+						<div id="search_field">
+							<form>
+								<input id="search_input" type="text" role="search" placeholder="Search"/>
+								<button id="search_button"><img src="images/Search_Icon.png" alt="Search"/></button>
+							</form>
+						</div>
+
+						<!--table section of alerts section-->
+						<div>
+							<table class="evdc_page_table">
+
+								<!--these are the control ids for the column widths and styles-->
+								<colgroup><col id="col_name_big"/><col id="col_type_big"/><col id="col_event_big"/><col id="col_ticket_big"/><col id="col_age_big"/></colgroup>
+
+								<!--col titles and links-->
+								<thead>
+									<th id="alerts_thead_name"><a href="#">Name<img src="images/DownArrow_Icon.png"/ alt="drop arrow"></a></th>
+									<th id="alerts_thead_type"><a href="#">Type<img src="images/DownArrow_Icon.png"/ alt="drop arrow"></a></th>
+									<th id="alerts_thead_event"><a href="#">Event Message<img src="images/DownArrow_Icon.png"/ alt="drop arrow"></a></th>
+									<th id="alerts_thead_ticket"><a href="#">Ticket<img src="images/DownArrow_Icon.png"/ alt="drop arrow"></a></th>
+									<th id="alerts_thead_age"><a href="#">Age/Elapsed<img src="images/DownArrow_Icon.png"/ alt="drop arrow"></a></th>
+								</thead>
+
+								<!--body section, holds content and ids for individual content-->
+								<tbody>
+									<tr class="odd">
+										<td id="alert_row_1_name"><img src="images/Group_Icon.png"/>Hosted Solutions</td>
+										<td id="alert_row_1_type">Organization</td>
+										<td id="alert_row_1_event">Lorem ipsum dolor sit amet consectetur lorem ipsum ado adipisicing elit do eiusmod</td>
+										<td id="alert_row_1_ticket"><img src="images/Ticket_Icon.png"/>5888645</td>
+										<td id="alert_row_1_age">15 mins 46 secs</td>
+									</tr>
+									<tr class="even">
+										<td id="alert_row_2_name"><img src="images/Columns_Icon.png"/>205.147.218.60</td>
+										<td id="alert_row_2_type">Organization</td>
+										<td id="alert_row_2_event">Sed do eiusmod tempor incididunt ut labore el dolore incididunt ut amet consectetur</td>
+										<td id="alert_row_2_ticket"><img src="images/Ticket_Icon.png"/>5888645</td>
+										<td id="alert_row_2_age">15 mins 46 secs</td>
+									</tr>
+									<tr class="odd">
+										<td id="alert_row_3_name"><img src="images/Columns_Icon.png"/>2ca7f870-6593-4483-928c-4a50035c68f</td>
+										<td id="alert_row_3_type">Device</td>
+										<td id="alert_row_3_event">Magna aliqua ut enim ad amet consectetur minim venaim, quis nostrud et dolore lorem</td>
+										<td id="alert_row_3_ticket"><img src="images/Ticket_Icon.png"/>5888645</td>
+										<td id="alert_row_3_age">15 mins 46 secs</td>
+									</tr>
+									<tr class="even">
+										<td id="alert_row_4_name"><img src="images/Group_Icon.png"/>Hosted Solution</td>
+										<td id="alert_row_4_type">Device</td>
+										<td id="alert_row_4_event">Exercitation uliamco laboris nisi ut aliquip ex ea commodo amet consectetur adipisicing</td>
+										<td id="alert_row_4_ticket"><img src="images/Ticket_Icon.png"/>5888645</td>
+										<td id="alert_row_4_age">15 mins 46 secs</td>
+									</tr>
+									<tr class="odd">
+										<td id="alert_row_5_name"><img src="images/Console_Icon_EVDC.png"/>allsciptsmi-bems02</td>
+										<td id="alert_row_5_type">Device</td>
+										<td id="alert_row_5_event">Lorem ipsum dolor sit amet consectetur adipisicing elit do eiusmod</td>
+										<td id="alert_row_5_ticket"><img src="images/Ticket_Icon.png"/>5888645</td>
+										<td id="alert_row_5_age">15 mins 46 secs</td>
+									</tr>
+								</tbody>
+
+								<!--footer controls the navigation of the table, ids for all buttons, especially previous and next-->
+								<tfoot>
+									<tr>
+										<td colspan="5">
+											<ul class="table_nav">
+												<li id="alerts_prev"><a href="">< Previous</a></li>
+												<li id="alerts_nav_1"><a href="">1</a></li>
+												<li id="alerts_nav_2"><a href="">2</a></li>
+												<li id="alerts_nav_3"><a href="">3</a></li>
+												<li id="alerts_nav_4"><a href="">4</a></li>
+												<li id="alerts_nav_5"><a href="">5</a></li>
+												<li>...</li>
+												<li id="alerts_nav_20"><a href="">20</a></li>
+												<li id="alerts_next"><a href="">Next ></a></li>
+											</ul>
+										</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</section>
+				</section>
+
+			</div>
+		</main>
+
+		<footer>
+			<!--Footer navigation of the page-->
+			<div class="container">
+				<ul>
+					<li><a href="#">Terms & Conditions</a></li>
+					<li>|</li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li>|</li>
+					<li><a href="#">Sitemap</a></li>
+					<li>|</li>
+					<li><a href="#">Home</a></li>
+				</ul>
+				<ul>
+					<li>&copy;2014 Windstream</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,723 @@
+/*revision of the navigation class from stream_style_9 (launch page css)*/
+/*changes z-indexing to accomidate for the evdc selector drop-down menu*/
+.navigation ul {
+	z-index: 75;
+}
+
+/*revision of the breadcrumb class from stream_style_9 (launch page css)*/
+.breadcrumb {
+	height: 35px;
+}
+
+/*cuts the breadcrumbs down to allow for the evdc selector*/
+.container_evdc_breadcrumb {
+	width: 501px;
+	float: left;
+	padding-top: 7px;
+}
+
+/*corrects arrows that are next to the expaneded row view headers*/
+.block_header {
+	float: none;
+}
+
+.block_header img {
+	padding-top: 8px;
+	padding-left: 5px;
+}
+
+/*Select EVDC located in breadcrumb*/
+.select_evdc {
+	float: right;
+	padding-top: 2px;
+}
+
+.select_evdc ul > li > span {
+	line-height: 30px;
+	font-size: 14px;
+	color: #1e1e1e;
+}
+
+.select_evdc img {
+	border: none; /*fixes IE 10 style issue*/
+	float: right;
+	padding-top: 10px;
+	padding-right: 5px;
+	}
+
+.select_evdc ul{
+	list-style-type: none;
+	height: 25px;
+	line-height: 25px;
+	font-size: 18px;
+}
+
+.evdc_options {
+	width: 150px;
+	border: 1px solid #E1DAD4; 
+	border-radius: 3px;
+	background-color: white;
+}
+
+.evdc_options a {
+	display: block;
+	width: 140px;
+	padding-left: 10px;
+	color: #1e1e1e;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.select_evdc ul > li {
+	position: relative;
+	display: inline-block; 
+}
+
+.select_evdc ul > li:first-child {
+	padding-right: 5px;
+}
+
+.select_evdc a {
+	text-decoration: none;
+	color: black;
+	height: 25px;
+}
+
+.select_evdc ul > li > ul {
+	width: 151px;
+	display: block;
+	height: 25px;
+	position: absolute;
+	font-size: 14px;
+	z-index: 50;
+}
+
+.select_evdc ul > li > ul > li {
+	display: none;
+	background-color: white;
+	opacity: .9;
+	border-left: 1px solid #DDDEE0;
+	border-right: 1px solid #DDDEE0;
+}
+
+.select_evdc ul > li > ul > li:last-child {
+	border-bottom: 1px solid #DDDEE0;
+	box-shadow: 1px 1px 1px #DDDEE0;
+}
+
+.select_evdc li:hover > ul > li {
+	display: block;
+	color: black;
+}
+
+.select_evdc li:hover li > a:hover{
+	color: #8dc63f;
+	text-decoration: none
+}
+
+/*repairs issues with ie*/
+a, img {
+    border:none;
+    outline:none
+}
+
+/*IMPORTANT*/
+/*this class hides the sub sections in the row when applied, it is currently not activated*/
+/*to activate, attach class add it next to the vm_drop_down class on div's in the html*/
+.deactivate {
+	display: none;
+}
+
+/*defines the general layout of the page through this background*/
+.vm_rectangle {
+	color: #595959;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	background-color: white;
+	margin-bottom: 72px;
+	border: 1px solid #DDDEE0;
+	box-shadow: 1px 1px 1px 1px #E1E0E5;
+	width: 100%;
+	display: inline-block;
+
+}
+
+/*used when a parent row is selected, this expands below*/
+.vm_subrow td > div {
+	display: inline-block;
+	background-color: #E1E6E9;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/*used to control each section of the child dropdown*/
+.vm_row_section {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	float: left;
+	margin-bottom: 12px;
+	width: 100%;
+}
+
+/*controls the background color of the subsections in the child dropdown*/
+.vm_network, .vm_storage, .vm_product, .vm_advanced, .vm_edit_vm_section {
+	background-color:  #F4F0ED; 
+}
+
+/*section below the headers in the child dropdown*/
+.vm_drop_down {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*removes line-height from sections that benefit from its removal to produce closer lines*/
+.vm_product, .vm_storage_content, #vm_drop_content_left, #vm_drop_content_right {
+	line-height: normal;
+}
+
+
+/*TOP DOWN SETUP SECTION BY SECTION*/
+/*table top controls*/
+#vm_header {
+	float: left;
+	width: 100%;
+}
+
+#vm_create {
+	float: left;
+	padding-bottom: 10px;
+}
+
+#vm_create a{
+	text-decoration: none;
+	color: black;
+	font-size: 17px;
+}
+
+#vm_create a:hover {
+	text-decoration: underline;
+}
+
+#vm_create img {
+	vertical-align: middle;
+	padding-right: 5px;
+}
+
+#vm_print {
+	float: right;
+}
+
+#vm_print img {
+	float: left;
+}
+
+
+/*OVERALL BUTTON CONTROLS FOR THE WHOLE PROGRAM*/
+.vm_button {
+	background-color: transparent;
+	border: 2px solid #8dc63f;
+	border-radius: 3px;
+	height: 25px;
+	line-height: 20px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding-left: 2px;
+	padding-right: 5px;
+}
+
+.vm_button a {
+	text-decoration: none;
+	color: #8dc63f;
+}
+
+/*drop down control for first drop down*/
+/*.vm_start {
+	border-bottom: 1px solid #E1DAD4;
+}*/
+
+.vm_start div {
+	padding-bottom: 3px;
+}
+
+#vm_edit {
+	float: left;
+}
+
+#vm_controls {
+	float: right;
+}
+
+/*console: drop content, content that displays below the headings of each virtual machine*/
+.vm_console > div{
+	height: 100px;
+}
+
+#vm_drop_content_left {
+	float: left;
+	width: 250px;
+}
+
+#vm_drop_content_left img {
+	float: left;
+	margin-right: 10px;
+}
+
+#vm_drop_content_left dl {
+	height: 70px;
+	padding-top: 15px;
+}
+
+#vm_drop_content_right {
+	float: left;
+	width: 690px;
+	height: 70px;
+}
+
+#vm_drop_content_right div {
+	float: left;
+	width: 230px;
+	padding-bottom: 15px;
+}
+
+#show_password a {
+	text-decoration: none;
+	color: black;
+}
+
+#show_password a:hover {
+	text-decoration: underline;
+}
+
+/*network*/
+#vm_network_table {
+	width: 100%;
+	margin-bottom: 10px;
+	border-collapse: collapse;
+}
+
+#vm_network_table th {
+	text-align: left;
+}
+
+#vm_network_table th a {
+	color: black;
+	text-decoration: none;
+}
+
+/*storage*/
+#vm_storage_table {
+	width: 100%;
+	margin-bottom: 10px;
+	border-collapse: collapse;
+}
+
+#vm_storage_table th {
+	text-align: left;
+}
+
+#vm_storage_table th a {
+	color: black;
+	text-decoration: none;
+}
+
+.vm_storage_content dl{
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+/*product*/
+#vm_product_drop {
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+#vm_product_drop li{
+	display: inline-block;
+	list-style-type: none;
+	width: 20%;
+}
+
+/*advanced*/
+
+.select_advanced {
+	float: right;
+	padding-top: 2px;
+}
+
+.select_advanced ul > li > span {
+	line-height: 30px;
+	font-size: 14px;
+	color: #1e1e1e;
+}
+
+.select_advanced img {
+	border: none; /*fixes IE 10 style issue*/
+	float: right;
+	padding-top: 10px;
+	padding-right: 5px;
+	}
+
+.select_advanced ul{
+	list-style-type: none;
+	height: 25px;
+	line-height: 25px;
+	font-size: 18px;
+	padding-top: -5px;
+	margin-top: -4px;
+}
+
+.evdc_advanced_options {
+	width: 150px;
+	border: 1px solid #E1DAD4; 
+	border-radius: 3px;
+	background-color: white;
+}
+
+.evdc_advanced_options a {
+	display: block;
+	width: 141px;
+	padding-left: 10px;
+	color: #1e1e1e;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.select_advanced ul > li {
+	position: relative;
+	display: inline-block; 
+}
+
+.select_advanced a {
+	text-decoration: none;
+	color: black;
+	height: 25px;
+}
+
+.select_advanced ul > li > ul {
+	width: 151px;
+	display: block;
+	height: 25px;
+	position: absolute;
+	font-size: 14px;
+	z-index: 50;
+}
+
+.select_advanced ul > li > ul > li {
+	display: none;
+	background-color: white;
+	opacity: .9;
+	border-left: 1px solid #DDDEE0;
+	border-right: 1px solid #DDDEE0;
+	width: 149px;
+}
+
+.select_advanced ul > li > ul > li:last-child {
+	border-bottom: 1px solid #DDDEE0;
+	box-shadow: 1px 1px 1px #DDDEE0;
+}
+
+.select_advanced li:hover > ul > li {
+	display: block;
+	color: black;
+}
+
+.select_advanced li:hover li > a:hover{
+	color: #8dc63f;
+	text-decoration: none;
+}
+
+#advanced_selector {
+	float: none;
+}
+
+#adv_screen_img {
+	float: left;
+	vertical-align: middle;
+	padding-top: 5px;
+	margin-top: -1px;
+}
+
+#advanced_section_wrapper {
+	padding-top: 4px;
+	padding-bottom: 15px;
+}
+
+#vm_advanced_content div{
+	float: left;
+	padding-right: 3px;
+}
+
+/*TABLE DEFINITION FOR ALL TABLES*/
+.vm_table_construction {
+	border-collapse: collapse;
+	float: left;
+	width: 100%;
+	line-height: 25px;
+	padding-bottom: 600px;
+}
+
+.vm_table_construction thead {
+	line-height: 28px;
+}
+
+.vm_table_construction th {
+	padding-left: 10px;
+	text-align: left;
+	border-bottom: 1px solid #E1DAD4;
+}
+
+.vm_table_construction th a {
+	color: black;
+	text-decoration: none;
+}
+
+.vm_table_construction th img {
+	padding-left: 5px;
+}
+
+.main_row td{
+	padding-left: 10px;
+}
+
+.vm_table_construction tbody > tr:last-child {
+	border-bottom: 1px solid #E1DAD4;
+}
+
+.vm_table_construction td img {
+	vertical-align: middle;
+	padding-right: 5px;
+}
+
+.odd { 
+	background-color: white;
+}
+
+.even {
+	background-color: #ECF4F8;
+}
+
+/*changes the background color of a row when a row is selected*/
+.selected {
+	background-color: #E6EFF6;
+}
+
+/*pads internal table content to align with headers*/
+.vm_network tbody > tr > td, .vm_storage tbody > tr > td {
+	padding-left: 10px;
+}
+
+#table_thead_vm_name a{
+	margin-left: 15px;
+	width: 75px;
+}
+
+/*DEFINES THE UNDERLINE HOVER FOR BOTH TABLES THEADS*/
+.thead_selected a {
+	line-height: 25px;
+	border-bottom: 3px solid #80b31e;
+	display: inline-block;
+	width: 100%;
+}
+
+/*TABLE NAVIGATION*/
+.table_nav {
+	text-align: center;
+	height: 25px;
+}
+
+.table_nav li {
+	padding-right: 1px;
+	padding-bottom: 4px;
+	padding-top: 8px;
+	display: inline-block;
+	list-style-type: none;
+}
+.table_nav a {
+	text-decoration: none;
+	color: black;
+	padding: 1px 5px 1px 5px;
+	border-radius: 3px;
+}
+
+#network_next a, #storage_next a, #table_next a {
+	background-color: #ECF4F8;
+}
+
+.table_nav a:hover{
+	background-color: black;
+	color: #80b31e;
+}
+
+#network_next a:hover, #storage_next a:hover, #table_next a:hover {
+	background-color: black;
+	color: #80b31e;
+}
+
+/*UNIQUE TABLE ELEMENTS FOR MAIN TABLE*/
+#table_col_vm_name {
+	width: 100px;
+}
+
+#table_col_vapp_name {
+	width: 100px;
+}
+
+#table_col_os {
+	width: 115px;
+}
+
+#table_col_state {
+
+}
+
+#table_col_vcpu {
+	width: 85px;
+}
+
+#table_col_vram {
+	width: 85px;
+}
+
+#table_col_storage {
+
+}
+
+#table_col_ip {
+
+}
+
+#table_col_monitor {
+	width: 85px;
+}
+
+#table_col_mgmt {
+
+}
+
+/*UNIQUE TABLE ELEMENTS FOR NETWORKS TABLE*/
+/*id's targeting anchor tag effect the width of the underline*/
+#network_col_id {
+	width: 200px;
+}
+
+#table_network_id a {
+	width: 65px;
+}
+
+#network_col_status {
+	width: 200px;
+}
+
+#table_network_status a {
+	width: 65px;
+}
+
+#network_col_mac {
+	width: 200px;
+}
+
+#table_network_mac a {
+	width: 100px;
+}
+
+#network_col_net {
+	width: 200px;
+}
+
+#table_network_network a {
+	width: 65px;
+}
+
+#network_col_primary {
+
+}
+
+#table_network_primary a {
+	width: 65px;
+}
+
+/*UNIQUE TABLE ELEMENTS FOR STORAGE TABLE*/
+/*id's targeting anchor tag effect the width of the underline*/
+#storage_col_name {
+	width: 300px;
+}
+
+#table_storage_disk a{
+	width:	75px;
+}	
+
+#storeage_col_size {
+	width: 300px;
+}
+
+#table_storage_size a{
+	width: 50px;
+}
+
+#storage_col_scsi {
+	width: 300px;
+}
+
+#table_storage_id a{
+	width: 100px;
+}
+
+
+/*CONTROL FOR DT AND DL SIZING, IT CHANGES ALL DT AND DL SECTIONS:*/
+/*CONSOLE STORAGE AND NETWORK*/
+dt {
+	font-size: 14px;
+}
+
+
+/*FONT SECTION OF WINDSTREAM NAVIGATOR EVDC PAGE*/
+/*DESCRIPTIONS OF WHAT EACH FONT EFFECTS IS INCLUDED*/
+
+
+/*DROID SANS REGULAR*/
+
+
+.vm_table_construction, .vm_button, tfoot {
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: normal;
+}
+
+/*HELBETICA NEUE*/
+
+#vm_create, thead {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+
+thead {
+	font-size: 11px;
+}
+
+
+/*ARIAL REGULAR*/
+
+#select_evdc, #content_cloudAv, #content_vCloud, #content_evdc_stat, #content_evdc_band, #select_evdc, tbody{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#content_vCloud, #content_cloudAv, #content_evdc_stat, #content_evdc_band, tfoot {
+	font-size: 12px;
+}
+
+tbody {
+	font-size: 11px;
+}

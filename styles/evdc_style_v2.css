@@ -1,0 +1,568 @@
+/*controls the 3 sections of the page*/
+/*evdc_page_content: virtual machines, catalogs, vCloud, Cloud AV, Storage, Networks*/
+/*evdc_page_graphs: evdc statistics, bandwidth*/
+/*evdc_page_table: alerts*/
+.evdc_page_content {
+	width: 506px;
+	float: left;
+}
+
+.evdc_page_graphs {
+	width: 496px;
+	float: left;
+}
+
+.evdc_page_table {
+	width: 100%;
+	float: left;
+	padding-bottom: 60px;
+}
+
+a, img {
+    border: 0;
+}
+
+/*revision of the navigation class from stream_style_9 (launch page css)*/
+/*changes z-indexing to accomidate for the evdc selector drop-down menu*/
+.navigation ul {
+	z-index: 75;
+}
+
+/*revision of the breadcrumb class from stream_style_9 (launch page css)*/
+.breadcrumb {
+	height: 35px;
+}
+
+/*cuts the breadcrumbs down to allow for the evdc selector*/
+.container_evdc_breadcrumb {
+	width: 501px;
+	float: left;
+	padding-top: 7px;
+}
+
+/*Select EVDC located in breadcrumb*/
+.select_evdc {
+	float: right;
+	padding-top: 2px;
+}
+
+.select_evdc ul > li > span {
+	line-height: 30px;
+	font-size: 14px;
+	color: #1e1e1e;
+}
+
+.select_evdc img {
+	border: none; /*fixes IE 10 style issue*/
+	float: right;
+	padding-top: 10px;
+	padding-right: 5px;
+	}
+
+.select_evdc ul{
+	list-style-type: none;
+	height: 25px;
+	line-height: 25px;
+	font-size: 18px;
+}
+
+.evdc_options {
+	width: 150px;
+	border: 1px solid #E1DAD4; 
+	border-radius: 3px;
+	background-color: white;
+}
+
+.evdc_options a {
+	display: block;
+	width: 140px;
+	padding-left: 10px;
+	color: #1e1e1e;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.select_evdc ul > li {
+	position: relative;
+	display: inline-block; 
+}
+
+.select_evdc ul > li:first-child {
+	padding-right: 5px;
+}
+
+.select_evdc a {
+	text-decoration: none;
+	color: black;
+	height: 25px;
+}
+
+.select_evdc ul > li > ul {
+	width: 151px;
+	display: block;
+	height: 25px;
+	position: absolute;
+	font-size: 14px;
+	z-index: 50;
+}
+
+.select_evdc ul > li > ul > li {
+	display: none;
+	background-color: white;
+	opacity: .9;
+	border-left: 1px solid #DDDEE0;
+	border-right: 1px solid #DDDEE0;
+}
+
+.select_evdc ul > li > ul > li:last-child {
+	border-bottom: 1px solid #DDDEE0;
+	box-shadow: 1px 1px 1px #DDDEE0;
+}
+
+.select_evdc li:hover > ul > li {
+	display: block;
+	color: black;
+}
+
+.select_evdc li:hover li > a:hover{
+	color: #8dc63f;
+	text-decoration: none;
+}
+
+/*BLOCK ELEMENT CONSTRUCTION EVDC*/
+.evdc_rectangle {
+	color: #595959;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	background-color: white;
+	float: left;
+	margin-bottom: 12px;
+	border: 1px solid #DDDEE0;
+	box-shadow: 1px 1px 1px 1px #E1E0E5;
+}
+
+.evdc_medium {
+	width: 241px;
+	height: 129px;
+	margin-right: 12px;
+}
+
+.evdc_square_tall {
+	width: 241px;
+	height: 194px;
+	margin-right: 12px;
+}
+
+.evdc_rectangle_holder {
+	width: 241px;
+	height: 194px;
+	float: left;
+	margin-bottom: 12px;
+}
+
+.evdc_small_one {
+	width: 241px;
+	height: 85px;
+}
+
+.evdc_small_two {
+	width: 241px;
+	height: 97px;
+}
+
+.evdc_square {
+	width: 241px;
+	height: 188px;
+	margin-right: 12px;
+}
+
+.evdc_wide {
+	width: 494px;
+	height: 248px;
+}
+
+.evdc_small_graph {
+	width: 496px;
+	height: 335px;
+}
+
+.evdc_large_graph {
+	width: 496px;
+	height: 448px;
+}
+
+.evdc_table {
+	width: 1002px;
+	height: 289px;
+}
+
+/*Virtual Machine definition*/
+#chart_vm ul{
+	padding-top: 5px;
+}
+
+/*Cataloge definition*/
+#chart_catalog {
+	padding-top: 40px;
+}
+
+/*Storage definition*/
+/*can be removed at time of implementation, only adjusts the placeholder image*/
+#chart_storage img{
+	width: 100%;
+}
+
+/*Cloud AV definition*/
+#content_cloudAv {
+	padding-top: 35px;
+}
+
+/*Cloud Migration defintion*/
+#content_vCloud {
+	padding-top: 35px;
+}
+
+/*Firewall definition*/
+#chart_firewall ul {
+	padding-top: 5px;
+}
+
+/*Load balancer definition*/
+#chart_load ul{
+	padding-top: 25px;
+}
+
+/*EVDC Stat definition*/
+#evdc_stat_graphs {
+	float: left;
+	width: 100%;
+	height: 250px;
+}
+
+#evdc_stat_graphs li{
+	display: inline-block;
+	list-style-type: none;
+}
+
+#evdc_stat_graphs_left img, #evdc_stat_graphs_right img{
+	padding-top: 25px;
+	width: 220px;
+	height: 200px;
+}
+
+#content_evdc_stat {
+	float: left;
+}
+
+/*Bandwidth definition*/
+#evdc_bandwidth_graph {
+	padding-top: 10px;
+	float: left;
+	width: 100%;
+	height: 360px;
+}
+
+#content_evdc_band  {
+	float: left;
+}
+
+/*unqiue 2 col chart style found on virtual machine, catalogs, firewall and load balancers*/
+#chart_vm, #chart_catalog, #chart_firewall, #chart_load{
+	text-align: center;
+}
+
+#chart_vm > li, #chart_catalog > li, #chart_firewall > li, #chart_load > li {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#cat_vm li, #cat_catalog li, #cat_firewall li, #cat_load li {
+	list-style-type: none;
+	text-align: right;
+	padding-right: 5px;
+}
+
+#val_vm li, #val_catalog li, #val_firewall li, #val_load li {
+	list-style-type: none;
+	text-align: left;
+}
+
+/*Section that controls the line height of all of the chart style cells*/
+#cat_vm li, #val_vm li, #cat_catalog li, #val_catalog li, #cat_firewall li, #val_firewall li, #cat_load li, #val_load li{
+	line-height: 20px;
+}
+
+/*alerts table definition*/
+/*defines the icons that perform actions on the table*/
+#alerts_title_patch {
+	padding-top: 2px;
+}
+
+#alerts_function_icons {
+	float: right;
+	padding-top: 5px;
+}
+
+#alerts_function_icons img {
+	vertical-align: middle;
+	padding: 0px;
+}
+
+#alerts_expand img{
+	padding-left: 3px;
+}
+
+/*alerts table definition*/
+/*defines the search area of the section*/
+#search_field {
+	margin-bottom: 5px;
+}
+
+#search_field form {
+	position: relative;
+	clear: both;
+	padding-top: 10px;
+}
+
+#search_field input{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: none;
+	box-shadow: none;
+	width: 100%;
+	border: 1px solid #E1DAD4; 
+	border-radius: 3px; 
+	padding-left: 10px;
+	padding-right: 32px; 
+	height: 25px;
+}
+
+#search_field input:focus {
+	outline: none;
+}
+
+#search_button {
+	width: 20px;
+	height: 20px;
+	top: 0;
+	right: 0;
+	position: absolute;
+	z-index: 100; 
+	background-color: transparent;
+	border: none;
+	margin-right: 5px;
+	margin-top: 12px;
+}
+
+#search_button img {
+	vertical-align: middle;
+	padding-bottom: 2px;
+}
+
+/*table class, influences both netowrk and alerts table*/
+.evdc_page_table {
+	border-collapse: collapse;
+	font-size: 12px;
+	width: 100%;
+	line-height: 25px;
+}
+
+.evdc_page_table thead {
+	line-height: 28px;
+}
+
+.evdc_page_table th {
+	padding-left: 10px;
+	text-align: left;
+	border-bottom: 1px solid #E1DAD4;
+}
+
+.evdc_page_table th a {
+	color: black;
+	text-decoration: none;
+}
+
+.evdc_page_table th img {
+	padding-left: 5px;
+}
+
+.evdc_page_table tbody > tr > td {
+	padding-left: 10px;
+}
+
+.evdc_page_table tbody > tr:last-child {
+	border-bottom: 1px solid #E1DAD4;
+}
+
+.evdc_page_table td img {
+	vertical-align: middle;
+	padding-right: 5px;
+}
+
+.odd { 
+	background-color: white;
+}
+
+.even {
+	background-color: #ECF4F8;
+}
+
+/*TABLE NAVIGATION*/
+.table_nav {
+	text-align: center;
+	height: 25px;
+}
+
+.table_nav li {
+	padding-right: 1px;
+	padding-bottom: 4px;
+	padding-top: 8px;
+	display: inline-block;
+	list-style-type: none;
+}
+.table_nav a {
+	text-decoration: none;
+	color: black; 
+	padding: 1px 5px 1px 5px;
+	border-radius: 3px;
+}
+
+#alerts_next a, #network_next a{
+	background-color: #ECF4F8; 
+}
+
+.table_nav a:hover{
+	background-color: black;
+	color: #80b31e;
+}
+
+#alerts_next a:hover, #network_next a:hover{
+	background-color: black;
+	color: #80b31e;
+}
+
+/*DEFINES THE UNDERLINE HOVER FOR BOTH TABLES*/
+#alerts_thead_name a, #alerts_thead_type a, #alerts_thead_event a, #alerts_thead_ticket a, #alerts_thead_age a, #net_thead_name a, #net_thead_ip a, #net_thead_created a {
+	line-height: 25px;
+	border-bottom: 3px solid #80b31e;
+	display: inline-block;
+	width: 100%;
+}
+
+/*UNIQUE TABLE ELEMENTS FOR NETWORK TABLE*/
+#col_name {
+	width: 150px;
+}
+
+#col_created {
+	width: 135px;
+}
+
+/*UNIQUE TABLE ELEMENTS FOR ALERTS TABLE: COLOR FOR INDICATION NEXT TO IMAGE*/
+/*this pushes the name column over to allow*/
+#alerts_thead_name a{
+	margin-left: 28px;
+	width: 222px;
+}
+
+#col_name_big {
+	width: 250px;
+}
+
+#col_type_big {
+	width: 85px;
+}
+
+#col_event_big {
+	width: 450px;
+}
+
+#col_acknowledge_big {
+
+}
+
+#col_ticket_big {
+
+}
+
+#col_age_big {
+
+}
+
+#alert_row_1_name img {
+	border-left: 2px solid #FE000A;
+}
+
+#alert_row_2_name img {
+	border-left: 2px solid #FEF568;
+}
+
+#alert_row_3_name img {
+	border-left: 2px solid #6BC11D;
+}
+
+#alert_row_4_name img {
+	border-left: 2px solid #6BC11D;
+}
+
+#alert_row_5_name img {
+	border-left: 2px solid #6BC11D;
+}
+
+/*FOOTER CONSTRUCTION SECTION*/
+/*allows the footer to be higher than the z-index of the magnifying glass*/
+footer {
+	z-index: 110;
+}
+
+
+/*BLOCK HEADER AMENDMENT TO ALLOW FOR WIDER NAMES, SUCH AS CLOUD MIGRATIONS AND VIRTUAL MACHINES*/
+.block_header_wide {
+	width: 105%;
+}
+
+/*FONT SECTION OF WINDSTREAM NAVIGATOR EVDC PAGE*/
+/*DESCRIPTIONS OF WHAT EACH FONT EFFECTS IS INCLUDED*/
+
+/*DROID SANS REGULAR*/
+
+#chart_vm, #chart_catalog, #chart_firewall, #chart_load, tfoot{
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: normal;
+}
+
+#chart_vm, #chart_catalog, #chart_firewall, #chart_load {
+	font-size: 14px;
+	color: #0d0e0d;
+}
+
+/*HELBETICA NEUE*/
+
+thead {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+
+thead {
+	font-size: 11px;
+}
+
+
+/*ARIAL REGULAR*/
+
+#select_evdc, #content_cloudAv, #content_vCloud, #content_evdc_stat, #content_evdc_band, #select_evdc, tbody{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#content_vCloud, #content_cloudAv, #content_evdc_stat, #content_evdc_band {
+	font-size: 12px;
+}
+
+tbody {
+	font-size: 11px;
+}

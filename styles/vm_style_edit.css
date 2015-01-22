@@ -1,0 +1,523 @@
+/*controls some features of the tables in the edits pane*/
+/*mainly height of the rows and color of the links, other components below*/
+.unique_edit_table tr {
+	line-height: 34px;
+}
+
+.unique_edit_table th {
+	line-height: 20px;
+}
+
+.table_action_a a {
+	color: #8dc63f;
+	text-decoration: none;
+}
+
+.table_action_a a:hover {
+	text-decoration: underline;
+}
+
+/**/
+.vm_edit_vm_section {
+	border: 2px solid #8dc63f;
+	border-radius: 3px;
+	position: relative;
+}
+
+.vm_edit_vm_section:after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 0 7px 7px;
+	border-color: #F4F0ED transparent;
+	display: block;
+	width: 0;
+	z-index: 1;
+	top: -6px;
+	left: 51px;
+}
+
+.vm_edit_vm_section:before {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 0 8px 8px;
+	border-color: #8dc63f transparent;
+	display: block;
+	width: 0;
+	z-index: 0;
+	top: -9px;
+	left: 50px;
+}
+
+/*upper navigation for edit view*/
+.vm_edit_navigation {
+	float: left;
+	margin-left: 2px;
+}
+
+.vm_edit_navigation ul {
+	list-style-type: none;
+}
+
+.vm_edit_navigation li {
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid #505050;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	margin-left: -2px;
+	margin-right: -2px;
+}
+
+.vm_edit_navigation a {
+	color: #505050;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 30px;
+	text-decoration: none;
+}
+
+.vm_edit_navigation li:hover {
+	border-top: 1px solid #505050;
+	border-bottom: none;
+	border-left: 1px solid #505050;
+	border-right: 1px solid #505050;
+	color: black;
+}
+
+.vm_edit_navigation li:hover a {
+	color: black;
+}
+
+#expanded_top_navigation {
+	width: 100px;
+	height: 31px;
+	margin-left: 1px; 
+	border-bottom: 1px solid #505050;
+	float: left;
+}
+
+.save_edits_button {
+	background-color: #8dc63f;
+	border: 2px solid #8dc63f;
+	border-radius: 3px;
+	height: 25px;
+	line-height: 20px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding-left: 5px;
+	padding-right: 5px;
+	float: right;
+}
+
+.save_edits_button a {
+	text-decoration: none;
+	color: white;
+}
+
+.full_span_div {
+	width: 100%;
+	float: left;
+}
+
+.half_span_div {
+	width: 435px;
+	float: left;
+}
+
+.spacing_side {
+	padding-right: 25px;
+}
+
+.vm_edit_title {
+	width: 100%;
+	float: left;
+	font-size: 15px;
+	color: black;
+	padding-top: 8px;
+	font-weight: bold;
+}
+
+.vm_edit_sub_title {
+	font-size: 13px;
+	color: black;
+	line-height: 20px;
+	padding-top: 5px;
+	font-weight: bold;
+}
+
+.third_span {
+	width: 288px;
+	float: left;
+}
+
+.third_spacing {
+	padding-right: 15px;
+}
+
+.quarter_span {
+	width: 216px;
+	float: left;
+}
+
+.quarter_spacing {
+	padding-right: 10px;
+}
+
+/*adds bottom border to sections that require the styling*/
+.vm_underline {
+	border-bottom: 1px solid #505050;
+}
+
+/*controls the text field design*/
+.vm_edit_input_field input, #special_case_vm_input {
+	border: 1px solid #E1DAD4; 
+	border-radius: 3px;
+	background-color: white;
+	height: 27px;
+	line-height: 25px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding-left: 5px;
+	vertical-align: middle;
+	font-size: 11px;
+}
+
+/*DROP DOWN SELECTOR FOR THE WHOLE EDITS SECTION*/
+.edit_select_vm {
+	display: block;
+	border: 1px solid #E1DAD4; 
+	border-radius: 3px;
+	background-color: white;
+	width: 65px;
+	color: #1e1e1e;
+	font-size: 11px;
+	font-weight: normal;
+	vertical-align: middle;
+}
+
+.edit_select_vm ul{
+	list-style-type: none;
+	height: 25px;
+	line-height: 25px;
+}
+
+.edit_select_vm nav > ul > li{
+	display: inline-block;
+	position: relative;
+	width: 65px;
+}
+
+.edit_select_vm a {
+	text-decoration: none;
+	color: black;
+	height: 25px;
+	margin-left: 10px;
+}
+
+.edit_select_vm nav > ul > li > ul  {
+	display: block;
+	height: 25px;
+	position: absolute;
+	text-align: left;
+}	
+
+.edit_select_vm nav > ul > li > ul > li:last-child {
+	border-bottom: 1px solid #DDDEE0;
+	box-shadow: 1px 1px 1px #DDDEE0;
+}
+
+.edit_select_vm nav > ul > li > ul > li > a {
+	display: none;
+	width: 55px;
+	background-color: white;
+	opacity: .9;
+	border-left: 1px solid #DDDEE0;
+	border-right: 1px solid #DDDEE0;
+	margin-left: -1px;
+	padding-left: 10px;
+}	
+
+.edit_select_vm li:hover > ul > li > a{
+	display: block;
+}
+
+.edit_select_vm li:hover li > a:hover{
+	color: #8dc63f;
+}
+
+.edit_select_vm img {
+	float: right;
+	padding-top: 10px;
+	margin-right: 2px;
+}
+
+/*controls the drop drop down z-index for overlapping drop-downs*/
+.top_drop nav > ul > li > ul {
+	z-index: 20;
+}
+
+/*pads internal table content to align with headers*/
+.vm_edit_hardware tbody > tr > td, .vm_storage tbody > tr > td {
+	padding-left: 10px;
+}
+
+/*defines the color of the star next to some subtitles*/
+.star_color {
+	color: red;
+}
+
+.input_third_definition {
+	width: 284px;
+}
+
+.input_third_definition nav > ul > li {
+	width: 284px;
+}
+
+.input_third_definition nav > ul > li > ul > li > a {
+	width: 274px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------*/
+/*GENERAL SECTION OF VM EDITS*/
+/*---------------------------*/
+
+
+/*-------------------------------------*/
+/*HARDWARE AND DISK SECTION OF VM EDITS*/
+/*-------------------------------------*/
+.third_span input {
+	width: 284px;
+	margin-left: -1px;
+}
+
+.vm_edit_hardware thead {
+	border-top: 1px solid #E1DAD4;
+}
+
+.hardware_size_section section {
+	display: inline-block;
+}
+
+.edit_hardware_hardware {
+	padding-bottom: 12px;
+}
+
+.edit_hardware_disk {
+	padding-bottom: 12px;
+}
+
+.edit_hardware_disk table {
+	border-collapse: collapse;
+}
+
+.edit_hardware_save {
+	padding-bottom: 5px;
+}
+
+.narrow_drop {
+	width: 50px;
+}
+
+.narrow_drop nav > ul > li {
+	width: 50px;
+}
+
+.narrow_drop nav > ul > li > ul > li > a {
+	width: 40px;
+}
+
+/*takes care of col widths of the table under disks*/
+#edit_disk_col_name {
+	width: 125px;
+}
+
+#edit_disk_col_size {
+	width: 250px;
+}
+
+#edit_disk_col_bus {
+
+}
+
+#edit_disk_col_unit {
+
+}
+
+#edit_disk_col_modify {
+
+}
+
+#edit_disk_col_delete {
+
+}
+
+
+/*------------------------*/
+/*NICS SECTION OF VM EDITS*/
+/*------------------------*/
+
+.vm_edit_nics thead {
+	border-top: 1px solid #E1DAD4;
+}
+
+.vm_edit_nics tbody > tr > td {
+	padding-left: 10px;
+}
+
+.vm_edit_nics table {
+	margin-bottom: 12px;
+	margin-top: 14px;
+	margin-left: 
+}
+
+.edit_nics_save {
+	padding-bottom: 5px;
+}
+
+#nic_create {
+	float: left;
+}
+
+#nic_create a{
+	text-decoration: none;
+	color: black;
+	font-size: 17px;
+}
+
+#nic_create a:hover {
+	text-decoration: underline;
+}
+
+#nic_create img {
+	vertical-align: middle;
+	padding-right: 5px;
+}
+
+.nic_network {
+	width: 150px;
+}
+
+.nic_network nav > ul > li {
+	width: 150px;
+}
+
+.nic_network nav > ul > li > ul > li > a {
+	width: 140px;
+}
+
+.nic_ip_mode {
+	width: 150px;
+}
+
+.nic_ip_mode nav > ul > li {
+	width: 150px;
+}
+
+.nic_ip_mode nav > ul > li > ul > li > a {
+	width: 140px;
+}
+
+
+/*------------------------------------------*/
+/*GUEST OS CUSTOMIZATION SECTION OF VM EDITS*/
+/*------------------------------------------*/
+.edit_guest_general {
+	padding-bottom: 12px;
+}
+
+.edit_guest_general p {
+	line-height: 15px;
+}
+
+.edit_guest_password {
+	padding-bottom: 12px;
+}
+
+#first_psword_radio {
+	padding-right: 20px;
+}
+
+#second_psword_radio {
+	padding-right: 5px;
+}
+
+#special_case_vm_input {
+	width: 150px;
+}
+
+.edit_guest_domain {
+	padding-top: 5px;
+	padding-bottom: 12px;
+}
+
+.edit_guest_save {
+	padding-bottom: 5px;
+}
+
+.quarter_span input {
+	width: 216px;
+	margin-left: -2px;
+}
+
+
+/*------------------------------------*/
+/*ADVANCED ACTIONS SECTION OF VM EDITS*/
+/*------------------------------------*/
+.vm_edit_advanced_navigation ul {
+	list-style-type: none;
+}
+
+.vm_edit_advanced_navigation li {
+	display: inline-block;	
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.vm_edit_advanced_navigation a {
+	color: #8dc63f;
+}
+
+.vm_edit_advanced_navigation li:hover a {
+	text-decoration: underline;
+}
+
+
+
+
+.vm_edit_general {
+	display: none;
+}
+
+.vm_edit_hardware {
+	
+}
+
+.vm_edit_nics {
+	display: none;
+}
+
+.vm_edit_guest {
+	display: none;
+}
+
+.vm_edit_advanced {
+	display: none;
+}

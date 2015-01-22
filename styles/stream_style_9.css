@@ -1,0 +1,931 @@
+/*FONT SECTION LISTED AT THE VERY BOTTOM OF THE CSS*/
+
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	background-image: url(../images/background.png);
+	background-repeat: repeat;
+}
+
+header {
+	display: block;
+	padding-bottom: 10px;
+}
+
+.header_wrapper {
+	width: 1025px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section {
+	display: block;
+}
+
+main {
+	width: 1025px;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 1002px;
+	margin-left: auto;
+	margin-right: auto; 
+
+}
+
+/*SECTION ABOVE NAVIGATION CONSTRUCTION*/
+.top {
+	background-color: black;
+	min-width: 1025px;
+	height: 72px;
+}
+
+#top_left {
+	width: 196px;
+	height: 45px;
+	float: left;
+	padding-top: 15px;
+}
+
+#top_left img {
+	border: none; /*fixes IE 10 style issue*/
+}
+
+#top_right {
+	width: 800px;
+	float: right;
+}
+
+#org_user_wrapper {
+	float: right;
+}
+
+#org_user_wrapper div {
+	float: left;
+	margin-top: 10px;
+}
+
+#styled_user {
+	text-transform: capitalize;
+	padding-left: 25px;
+}
+
+#styled_user img {
+	padding-left: 12px;
+	padding-bottom: 5px;
+	border: none; /*fixes IE 10 style issue*/
+}
+
+#styled_user ul{
+	list-style-type: none;
+	height: 25px;
+	line-height: 25px;
+	font-size: 18px;
+	z-index: 100;
+}
+
+#organization {
+	width: 180px; 
+}
+
+#organization a{
+	width: 180px;
+}
+
+/*
+#user {
+	width: 60px;
+}*/
+
+#user a {
+	width: 100px;
+}
+
+#styled_user ul > li {
+	position: relative;
+	display: inline-block;
+
+}
+
+#styled_user ul > li:first-child {
+	padding-right: 20px;
+}
+
+#styled_user a {
+	text-decoration: none;
+	color: white;
+}
+
+#styled_user ul > li > ul {
+	display: block;
+	height: 25px;
+	position: absolute;
+	font-size: 14px;
+}
+
+#styled_user ul > li > ul > li > a {
+	display: none;
+	background-color: white;
+	opacity: .9;
+	padding-left: 10px;
+	border-left: 1px solid #DDDEE0;
+	border-right: 1px solid #DDDEE0;
+	height: 25px;
+}
+
+#styled_user ul > li > ul > li:last-child {
+	border-bottom: 1px solid #DDDEE0;
+	box-shadow: 1px 1px 1px #DDDEE0;
+}
+
+#styled_user li:hover > ul > li > a{
+	display: block;
+	color: black;
+}
+
+#org_user_wrapper div > ul > li:hover {
+	text-decoration: underline;
+	color: white;
+}
+
+#styled_user li:hover li > a:hover{
+	color: #8dc63f;
+	text-decoration: none;
+}
+
+/*NAVIGATION CONSTRUCTION*/
+
+.navigation {
+	background-image: url(../images/menu-bg.png);
+	min-width: 1025px;
+	background-repeat: repeat-x;
+	display: block;
+	text-transform: capitalize;
+	font-size: 18px;
+	text-align: center;
+}
+
+.navigation ul{
+	list-style-type: none;
+	height: 35px;
+	line-height: 35px;
+}
+
+.navigation nav > ul > li{
+	display: inline-block;
+	position: relative;
+	width: 120px;
+	padding-left: 31px; 
+	padding-right: 31px;
+	text-align: center;
+}
+
+.navigation nav > ul > li:first-child{
+	padding-left: 0;
+}
+
+.navigation nav > ul > li:last-child{
+	padding-right: 0;
+}
+
+.navigation a {
+	text-decoration: none;
+	color: white;
+	height: 25px;
+}
+
+.navigation nav > ul > li > ul  {
+	display: block;
+	height: 25px;
+	position: absolute;
+	text-align: left;
+	margin-left: 15px;
+	font-size: 14px;
+}
+
+.navigation nav > ul > li:first-child > ul{
+	margin-left: 5px;
+}	
+
+.navigation nav > ul > li > ul > li:last-child {
+	border-bottom: 1px solid #DDDEE0;
+}
+
+.navigation nav > ul > li > ul > li > a {
+	display: none;
+	width: 195px;
+	background-color: white;
+	opacity: .9;
+	padding-left: 10px;
+	border-left: 1px solid #DDDEE0;
+	border-right: 1px solid #DDDEE0;
+}	
+
+.navigation nav > ul > li > ul > li > a:last-child {
+	padding-bottom: 5px;
+	box-shadow: 1px 1px 1px #DDDEE0;
+}
+
+.navigation li:hover > ul > li > a{
+	display: block;
+	color: black;
+}
+
+.navigation nav > ul > li:hover {
+	text-decoration: underline;
+	color: white;
+}
+
+.navigation li:hover li > a:hover{
+	color: #8dc63f;
+}
+
+/*BREADCRUMB NAVIGATION*/
+
+.breadcrumb {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	height: 20px;
+}
+
+.breadcrumb ul {
+	list-style-type: none;
+}
+
+.breadcrumb li {
+	display: inline-block;
+}
+
+.breadcrumb a {
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+	color: #959595;
+}
+
+.breadcrumb a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+/*ERROR SECTION CONSTRUCTION*/
+
+.feedback {
+	background-color: #E0E5E8;
+	box-shadow: inset 0 0 10px #E1E0E5;
+	border-top: 1px solid #C9CDD0;
+	border-bottom: 1px solid #C9CDD0;
+	min-width: 1025px;
+	background-repeat: repeat-x;
+	box-shadow: inset 0 0 5px #C9CDD0;
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+	color: #959595;
+}
+
+.feedback img {
+	padding-top: 5px;
+}
+
+.feedback p{
+	margin-bottom: 20px;
+}
+
+.hidden {
+	/*display: none;*/
+}
+
+/*BLOCK ELEMENT CONSTRUCTION*/
+
+.rectangle {
+	color: #595959;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	background-color: white;
+	float: left;
+	margin-bottom: 12px;
+	border: 1px solid #DDDEE0;
+	box-shadow: 1px 1px 1px 1px #E1E0E5;
+}
+
+.square {
+	width: 326px;
+	height: 200px;
+	margin-right: 12px;
+}
+
+.two_third {
+	width: 664px;
+	height: 200px;
+}
+
+.half {
+	width: 495px;
+	height: 65px;
+	margin-right: 12px;
+}
+
+.long {
+	width: 1002px;
+	height: 215px;
+}
+
+.rectangle h2 {
+	font-weight: normal;
+	text-transform: capitalize;
+}
+
+.padless {
+	padding: 0;
+}
+
+#draas {
+	margin-right: 0px;
+}
+
+#feedback {
+	margin-right: 0px;
+}
+
+/*ALERT CONSTRUCTION SECTION*/
+
+.alert_image {
+	height: 75px;
+	width: 50px;
+	float: left;
+}
+
+.alert_header {
+	height: 45px;
+	width: 100%;
+	list-style-type: none;
+	float: left;
+	border-bottom: 1px gray solid;
+	padding-top: 5px;
+}
+
+.alert_header li{
+	display: inline-block;
+	font-size: 15px;
+	line-height: 40px;
+}
+
+#devices_monitored, #alert_numbers_col {
+	font-size: 30px;
+	letter-spacing: -1px;
+}
+
+#devices_label, #alert_tags_col, #vertical{
+	font-size: 18px;
+	font-weight: 100;
+}
+
+.alert_info {
+	height: 100px;
+	width: 296px;
+	float: left;
+	padding-top: 5px;
+}
+
+#vertical {
+	transform:rotate(-90deg);
+ 	-ms-transform:rotate(-90deg); /* IE 9 */
+ 	-webkit-transform:rotate(-90deg); /* Opera, Chrome, and Safari */
+ 	text-transform: capitalize;
+ 	width: 25px;
+ 	height: 110px;
+ 	line-height: 110px;
+ 	float: left;
+}
+
+#alert_info_numbers {
+	padding-left: 35px;
+}
+
+#alert_numbers_col {
+	height: 100px;
+	width: 50px;
+	line-height: 50px;
+	text-align: right;
+	float: left;
+	padding-right: 5px;
+	list-style-type: none;
+}
+
+#alert_tags_col {
+	height: 100px;
+	width: 60px;
+	line-height: 20px;
+	float: left;
+	list-style-type: none;
+	text-transform: capitalize;
+	padding-right: 5px;
+}
+
+#alert_tags_col li {
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+#alert_critical hr {
+	border: 1px solid #FF000A;
+}
+
+#alert_minor hr {
+	border: 1px solid #F7B21D;
+}
+
+#alert_major hr {
+	border: 1px solid #F26522;
+}
+
+#alert_notice hr {
+	border: 1px solid #FFF568;
+}
+
+/*TICKET CONSTRUCTION SECTION*/
+
+#ticket_info div {
+	padding-top: 15px;
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+#ticket_info ul {
+	list-style-type: none;
+}
+
+#ticket_info a {
+	text-decoration: none;
+	color: #505050;
+}
+
+#ticket_info li:first-child {
+	font-size: 65px;
+}
+
+#ticket_info li:nth-child(2) {
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+#ticket_info li:last-child {
+	text-transform: capitalize;
+	font-size: 11px;
+}
+
+/*DRAAS CONSTRUCTION SECTION */
+
+#draas img {
+
+}
+
+#draas ul {
+	padding-top: 25px;
+	list-style-type: none;
+	text-align: center; 
+}
+
+#draas li {
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 15px;
+	padding-bottom: 6px;
+	display: inline-block;
+	font-size: 65px;
+	line-height: 100%;
+}
+
+#draas li:nth-child(2) {
+	font-size: 40px;
+}
+
+#draas li:nth-child(4){
+	font-size: 12px;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding-top: 0px;
+}
+
+/*BANDWIDTH CAROUSEL CONSTRUCTION*/
+
+#bandwidth div{
+	background-color: transparent;
+}
+
+#bandwidth {
+	padding-left: 10px;
+}
+
+#bandwidth img {
+	border: none; /*fixes IE 10 style issue*/
+}
+
+#arrow_content_band {
+	width: 100%;
+	height: 150px;
+}
+
+#left_arrow, #right_arrow {
+	width: 30px;
+	margin-top: 35px;
+}
+
+#left_arrow {
+	float: left;
+	background-image: url(../images/carousal-arrow-gray.png);
+	background-repeat: no-repeat;
+}
+
+#right_arrow {
+	float: right;
+	background-image: url(../images/carousal-arrow-gray-right.png);
+	background-repeat: no-repeat;
+}
+
+#left_arrow img:hover {
+	opacity: 0;
+}
+
+#right_arrow img:hover {
+	opacity: 0;
+}
+
+#bandwidth_content {
+	height: 100px;
+	width: 239px;
+	float: left;
+	text-align: center;
+	margin-top: 15px;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+#bandwidth_content li {
+	display: inline-block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 30px;
+}
+
+#bandwidth_content ul {
+	list-style-type: none;
+}
+
+.bandwidth_navigation {
+	width: 100%;
+	float: left;
+}
+
+.bandwidth_buttons {
+	text-align: center;
+}
+
+.bandwidth_buttons ul {
+	list-style-type: none;
+}
+
+.bandwidth_buttons li {
+	display: inline-block;
+}
+
+/*ANNOUNCEMENTS CAROUSEL CONSTRUCTION*/
+
+#announcements {
+	background-image: url(../images/announcements_background.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#announcements img {
+	border: none; /*fixes IE 10 style issue*/
+}
+
+#announcement_body {
+	float: left;
+	width: 600px;
+	height: 125px;
+	font-size: 14px;
+	padding-left: 35px;
+	overflow: hidden;
+}
+
+#announcement_body p {
+	padding-top: 40px;
+	padding-bottom: 15px;
+}
+
+#announcement_body a {
+	color: #8dc63f;
+}
+
+#announcement_body a:hover {
+	color: black;
+}
+
+#announcement_body small {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #858484;
+	font-size: 12px;
+}
+
+#announcement_buttons {
+	width: 600px;
+	float: left;
+}
+
+#announcement_buttons ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+#announcement_buttons li {
+	display: inline-block;
+}
+
+/*CONTACT CONSTRUCTION SECTION*/
+
+#contact {
+	padding-top: 0px;
+}
+
+#left_contact {
+	width: 160px;
+	margin-top: 20px;
+	float: left;
+}
+
+#right_contact {
+	width: 300px;
+	margin-top: 10px;
+	float: left;
+}
+
+#right_contact ul {
+	list-style-type: none;
+	padding-left: 10px;
+}
+
+#right_contact li {
+	display: block;
+	font-size: 12px;
+}
+
+#right_contact a {
+	color: #8dc63f;
+}
+
+#right_contact a:hover {
+	color: black;
+}
+
+/*FEEDBACK CONSTRUCTION SECTION*/
+
+#feedback {
+	padding-top: 0px;
+}
+
+#left_feedback {
+	width: 150px;
+	margin-top: 20px;
+	float: left;
+}
+
+#right_feedback {
+	width: 300px;
+	margin-top: 12px;
+	float: left;
+	font-size: 13px;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+#right_feedback a {
+	color: #8dc63f;
+}
+
+#right_feedback a:hover {
+	color: black;
+}
+
+/*EVDC CONSTRUCTION SECTION*/
+
+.evdc ul{
+	list-style-type: none;
+}
+
+.evdc li {
+	display: inline-block;
+}
+
+.evdc_heading {
+	width: 100%;
+	height: 30px;
+}
+
+.evdc_info {
+	width: 300px;
+	height: 100%;
+	float: left;
+}
+
+.evdc_info div {
+	float: left;
+	width: 50%;
+	padding-top: 20px;
+}
+
+.evdc_info img {
+	float: left;
+	padding-bottom: 5px;
+}
+
+.evdc_info dl {
+	width: 120px;
+	float: right;
+}
+
+.evdc_info dd {
+	font-size: 12px;
+}
+
+.evdc_info a {
+	text-decoration: none;
+	color: black;
+}
+
+.evdc_info a:hover {
+	text-decoration: underline;
+}
+
+.evdc_graphs section {
+	width: 217px;
+	height: 158px;
+	float: left;
+	box-sizing: border-box;
+	border-left: 1px gray solid;
+	margin-top: 10px;
+}
+
+.evdc_graphs ul {
+	padding-left: 15px;
+	height: 28px;
+}
+
+.evdc_graphs div {
+	text-align: center;
+	padding-top: 12px;
+}
+
+/*ADD EDVC SECTION*/
+
+.add_evdc {
+	padding-bottom: 50px;
+	line-height: 40px;
+	float: left;
+}
+
+.add_evdc img {
+	height: 20px;
+	padding-right: 5px;
+	padding-left: 10px;
+}
+
+.add_evdc a {
+	text-decoration: none;
+	font-size: 23px;
+	color: #020202;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	text-transform: capitalize;
+}
+
+.add_evdc a:hover {
+	text-decoration: underline;
+}
+
+/*FOOTER CONSTRUCTION SECTION*/
+
+footer {
+	display: block;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: black;
+	padding-bottom: 15px; 
+	padding-top: 15px;
+	text-transform: uppercase;
+	box-sizing: border-box;
+}
+
+footer ul {
+	list-style-type: none;
+	color: white;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	float: left;
+}
+
+footer ul:last-child {
+	float: right;
+}
+
+footer li {
+	display: inline-block;
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+footer a {
+	text-decoration: none;
+	color: white;
+}
+
+footer a:hover{
+	color: #8dc63f;
+}
+
+
+
+
+
+/*FONT SECTION OF WINDSTREAM NAVIGATION*/
+/*DESCRIPTIONS OF WHAT EACH FONT EFFECTS IS INCLUDED*/
+
+
+/*TILE HEADER ADJUSTMENT SECTION FOR ALL*/
+/*CONTROLS THE IMAGES FOR THEM AS WELL*/
+
+.block_header {
+	float: left;
+	text-align: left;
+	display: inline-block;
+	width: 100%;
+	background: transparent;
+}
+
+.block_header img {
+	float: left;
+	padding-right: 5px;
+}
+
+.block_header h2 {
+	float: left;
+	padding-right: 10px;
+}
+
+.block_header a {
+	text-decoration: none;
+	font-size: 23px;
+	color: #020202;
+	font-weight: 100;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+
+.block_header a:hover {
+	text-decoration: underline;
+}
+
+/*DROID SANS REGULAR*/
+/*THIS EFFECTS: select organization, the navigation bar, the devices/alerts word text,
+the first level sub text of tickets and draas, the first level paragraph text of 
+bandwidth and announcements, the contact information in contact us, and vCPU, vRAM, and Storage*/
+
+#top_right, .navigation, #vertical, #devices_label, #alert_tags_col, #outstanding, #resolved, #assets, #bandwidth_content, #right_contact, .evdc_graphs, #announcement_body {
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: normal;
+}
+
+#vertical, #devices_label, #alerts_tags_col, #outstanding, #resolved, #assets, #announcement_body {
+	color: #505050;
+}
+
+
+/*HELBETICA NEUE*/
+/*THIS EFFECTS: the breadcrumbs, the tile headings, the large numbers displaying tickets and draas,
+the large number in devices, the second level in bandwidth (possibly large number), the feedback text*/
+
+.breadcrumb, #devices_monitored, #alert_numbers_col,  #number_outstand_tix, #number_resolved_tix, #numerator_assets, #draas_of, #denominator_assets, #Bandwidth_number, #Bandwidth_speed, #right_feedback {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+
+
+/*ARIAL REGULAR*/
+/*THIS EFFECTS: error feedback, third level in tickets, and third level announcements, evdc information*/
+
+.feedback, #outstanding_des, #resolved_des, .evdc_info {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
