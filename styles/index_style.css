@@ -12,6 +12,10 @@ a:hover {
 	color: #75C6D3;
 }
 
+#letter p {
+	padding-bottom: 25px;
+}
+
 #disclaimer {
 	font-size: 10px;
 }
