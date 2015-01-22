@@ -3,3 +3,39 @@
 * {
 	font-family: 'Droid Sans', sans-serif;
 }
+
+.notepage {
+	margin-right: auto;
+	margin-left: auto;
+	background-color: white;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 15px 15px 15px 15px;
+	border: 1px solid #DDDEE0;
+	box-shadow: 1px 1px 1px 1px #E1E0E5;
+}
+
+#disclaimer {
+	font-size: 10px;
+}
+
+
+@media (min-width: 320px){
+	.notepage {
+		width: 280px;
+	}
+}
+
+
+@media (min-width: 480px){
+	.notepage {
+		width: 400px;
+	}
+}
+
+@media (min-width: 768px){
+	.notepage {
+		width: 700px;
+	}
+}
