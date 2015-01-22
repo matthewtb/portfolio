@@ -4,33 +4,38 @@
 	font-family: 'Droid Sans', sans-serif;
 }
 
-.notepage {
-	margin-right: auto;
-	margin-left: auto;
-	background-color: white;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	padding: 15px 15px 15px 15px;
-	border: 1px solid #DDDEE0;
-	box-shadow: 1px 1px 1px 1px #E1E0E5;
+a {
+	color: #699199;
+}
+
+a:hover {
+	color: #75C6D3;
 }
 
 #disclaimer {
 	font-size: 10px;
 }
 
-
 @media (min-width: 320px){
 	.notepage {
-		width: 280px;
+		width: 100%;
+		padding: 0 0 0 0;
+		margin-top: 20px;
+		background-color: white;
+		margin-right: auto;
+		margin-left: auto;
 	}
 }
-
 
 @media (min-width: 480px){
 	.notepage {
 		width: 400px;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		padding: 15px 15px 15px 15px;
+		border: 1px solid #DDDEE0;
+		box-shadow: 1px 1px 1px 1px #E1E0E5;
 	}
 }
 
