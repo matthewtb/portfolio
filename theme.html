@@ -1,0 +1,547 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>navigator</title>
+		<link rel="stylesheet" type="text/css" href="styles/stream_style_9.css"/>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'/>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<link rel="shortcut icon" href="images/favicon.ico"/>
+	</head>
+	<body>
+		<header>
+		
+			<section class="top">
+				<div class="header_wrapper">
+					<div class="container">
+						<div id="top_left">
+							<a href="#"><img src="images/Logo.jpg" alt="company logo"/></a>
+						</div>
+						<section id="top_right">
+							<div id="org_user_wrapper">
+								<div id="styled_user">
+									<ul>
+										<li id="organization"><a href="#">Select Organization<img src="images/drop_menu.png" alt="carat symbol for drop down decoration"/></a>
+											<ul>
+												<li><a href="#">Select Organization</a></li>
+												<li><a href="#">Select Organization</a></li>
+												<li><a href="#">Select Organization</a></li>
+											</ul>
+										</li>
+
+										<li id="user"><a href="#">Matthew Trilby-Bassett<img src="images/drop_menu.png" alt="carat symbol for drop down decoration"/></a>
+											<ul>
+												<li><a href="#">Edit Profile</a></li>
+												<li><a href="#">Settings</a></li>
+												<li><a href="#">Logout</a></li>
+											</ul>
+										</li>
+									</ul>	
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+
+			<!--navigation construction-->
+			<section class="navigation">
+				<div class="header_wrapper">
+					<nav class="container">
+						<ul>
+							<li><a href="#">monitoring</a>
+								<ul>
+									<li><a href="#">Summary View</a></li>
+									<li id="wide"><a href="#">Device Monitoring Dashboard</a></li>
+									<li><a href="#">Reports</a></li>
+									<li><a href="#">Activity Log</a></li>
+								</ul>
+							</li>
+							<li><a href="#">services</a>
+								<ul>
+									<li id="wide"><a href="#">Cloud Virtual Data Centers</a></li>
+									<li><a href="#">Storage</a></li>
+									<li><a href="#">DRaaS</a></li>
+									<li><a href="#">Load Balancing</a></li>
+									<li><a href="#">DNS</a></li>
+									<li><a href="#">Cloud Migrations</a></li>
+									<li><a href="#">Object Stores</a></li>
+								</ul>
+							</li>
+							<li><a href="#">security</a>
+								<ul>
+									<li><a href="#">Firewalls</a></li>
+									<li><a href="#">VPNs</a></li>
+									<li><a href="#">DDoS Defence</a></li>
+									<li><a href="#">Cloud AV</a></li>
+								</ul>
+							</li>
+							<li><a href="#">support</a>
+								<ul>
+									<li><a href="#">Contacts</a></li>
+									<li><a href="#">Tickets</a></li>
+									<li><a href="#">Forms</a></li>
+									<li><a href="#">Announcements</a></li>
+									<li><a href="#">Documents</a></li>
+									<li><a href="#">How To</a></li>
+									<li><a href="#">FAQs</a></li>
+								</ul>
+							</li>
+							<li><a href="#">account</a>
+								<ul>
+									<li><a href="#">Account Settings</a></li>
+									<li><a href="#">Permissions</a></li>
+									<li><a href="#">Escalation</a></li>
+									<li><a href="#">Billing</a></li>
+									<li><a href="#">Notifications</a></li>
+									<li><a href="#">Users</a></li>
+									<li><a href="#">Sub Accounts</a></li>
+									<li><a href="#">API</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+			<!--breadcrumb navigation section-->
+			<section class="breadcrumb">
+				<div class="header_wrapper">
+					<ul class="container">
+						<li><a href="#">Home ></a></li>
+					</ul>
+				</div>
+			</section>
+
+			<!--error feedback section-->
+			<!--hidden class hides the box-->
+			<section class="feedback hidden">
+				<div class="header_wrapper">
+					<div class="container">
+						<p><img src="images/confirm.png" alt="green check to show confirmation"/> Confirmation or <img src="images/error.png" alt="red exclamation point to show error"/> Error Feedback</p>
+					</div>
+				</div>
+			</section>
+
+		</header>
+
+
+		<main>
+			<div class="container">
+
+				<!--device/alert block of section-->
+				<!--includes tags for jscript: number_'level of alert'_alerts and devices_monitored
+				to attach data to-->
+				<section class="rectangle square">
+					<div class="block_header">
+						<img src="images/alert.png" alt="alert section image"/>
+						<h2><a href="#">devices/alerts</a></h2>
+					</div>
+					<section class="alert_header">
+						<ul>
+							<li id="devices_monitored">3123</li>
+							<li id="devices_label">Devices Monitored</li>
+						</ul>
+					</section>
+					<section class="alert_info">
+						<div id="vertical">
+							<p>alerts</p>
+						</div>
+						<div id="alert_info_numbers">
+							<ul id="alert_numbers_col">
+								<li id="number_critical_alerts">311</li>
+								<li id="number_minor_alerts">311</li>
+							</ul>
+							<ul id="alert_tags_col">
+								<li id="alert_critical">critical<hr></li>
+								<li id="alert_minor">minor<hr></li>
+							</ul>
+							<ul id="alert_numbers_col">
+								<li id="number_major_alerts">311</li>
+								<li id="number_notice_alerts">311</li>
+							</ul>
+							<ul id="alert_tags_col">
+								<li id="alert_major">major<hr></li>
+								<li id="alert_notice">notice<hr></li>
+							</ul>
+						</div>
+					</section>
+				</section>
+
+				<!--ticket block of section-->
+				<!--includes tags for jscript: number_outstanding_tix, number_resolved_tix to attach data to-->
+				<section class="rectangle square" id="tickets">
+					<div class="block_header">
+						<img src="images/tickets.png" alt="tickets section image"/>
+						<h2><a href="#">tickets</a></h2>
+					</div>
+					<section id="ticket_info">
+						<div>
+							<ul>
+								<li id="number_outstand_tix"><a href="#">8</a></li>
+								<li id="outstanding">outstanding</li>
+								<li id="outstanding_des">(open, working, pending)</li>
+							</ul>
+						</div>
+						<div>
+							<ul>
+								<li id="number_resolved_tix"><a href="#">15</a></li>
+								<li id="resolved">resolved</li>
+								<li id="resolved_des">(last 30 days)</li>
+							</ul>
+						</div>
+					</section>
+				</section>
+
+				<!--DRAAS block of section-->
+				<!--includes tags for jscript: numerator_assets and denominator_assets to attach data to-->
+				<section class="rectangle square" id="draas">
+					<div class="block_header">
+						<img src="images/draas.png" alt="draas section image"/>
+						<h2><a href="#">DRaaS</a></h2>
+					</div>
+					<ul>
+						<li id="numerator_assets">9</li>
+						<li id="draas_of">of</li>
+						<li id="denominator_assets">10</li>
+						<li id="assets">assets protected</li>
+					</ul>
+				</section>
+
+				<!--Bandwidth carousel block of section-->
+				<section class="rectangle square" id="bandwidth">
+					<div class="block_header">
+						<img src="images/bandwidth.png" alt="bandwidth section image"/>
+						<h2><a href="#">bandwidth</a></h2>
+					</div>
+					<!--defines the arrows and content of the carousel-->
+					<div id="arrow_content_band">
+						<div id="left_arrow">
+							<a href="#"><img src="images/carousal-arrow-green.png" alt="left green arrow"/></a>
+						</div>
+
+						<div id="bandwidth_content">
+							<p>boston networks traffic<br>total transfer</p>
+							<ul>
+								<li id="Bandwidth_number">60.3</li>
+								<li id="Bandwidth_speed">mpbps</li>
+							</ul>
+							<time datetime="2014-05-27">05/27/2014</time>
+						</div>
+
+						<div id="right_arrow">
+							<a href="#"><img src="images/carousal-arrow-green-right.png" alt="right green arrow"/></a>
+						</div>
+					</div>
+
+					<!--section for the text between the two other sections-->
+					<section class="bandwidth_navigation">
+						<div class="bandwidth_buttons">
+							<ul>
+								<li><a href="#"><img src="images/carousal-circle-green.png" alt="green filled dot"/></a></li>
+								<li><a href="#"><img src="images/carousal-circle-gray.png" alt="open dot"/></a></li>
+								<li><a href="#"><img src="images/carousal-circle-gray.png" alt="open dot"/></a></li>
+								<li><a href="#"><img src="images/carousal-circle-gray.png" alt="open dot"/></a></li>
+								<li><a href="#"><img src="images/carousal-circle-gray.png" alt="open dot"/></a></li>
+							</ul>
+						</div>
+					</section>
+				</section>
+
+				<!--Announcements carousel block of section-->
+				<section class="rectangle two_third" id="announcements">
+					<div class="block_header">
+						<img src="images/announcements.png" alt="announcements section image"/>
+						<h2><a href="#">announcements</a></h2>
+					</div>
+					<div id="announcement_body">
+						<div>
+							<p>This is the New Company App!<br>Lorem ipusm dolore emet utilcy <a href="#">more info.</a></p>
+						</div>
+						<small>Lorem ipsum a lorem ipsum abdo dolore ut vindico.</small>
+					</div>
+					<div id="announcement_buttons">
+						<ul>
+							<li><a href="#"><img src="images/carousal-circle-green.png" alt="green filled dot"/></a></li>
+							<li><a href="#"><img src="images/carousal-circle-gray.png" alt="open dot"/></a></li>
+							<li><a href="#"><img src="images/carousal-circle-gray.png" alt="open dot"/></a></li>
+							<li><a href="#"><img src="images/carousal-circle-gray.png" alt="open dot"/></a></li>
+							<li><a href="#"><img src="images/carousal-circle-gray.png" alt="open dot"/></a></li>
+						</ul>
+					</div>
+				</section>
+
+				<!--Contact information block of section-->
+				<section class="rectangle half" id="contact">
+					<div id="left_contact">
+						<div class="block_header">
+							<img src="images/contact.png" alt="contact section image"/>
+							<h2><a href="#">contact us</a></h2>
+							<img src="images/panel-divider.png" alt="contact divider"/>
+						</div>
+					</div>
+					<div id="right_contact">
+						<ul>
+							<li>1 (877) 621-6666</li>
+							<li><a href="#">company.dcsupport@company.com</a></li>
+							<li><a href="#">Create Ticket</a></li>
+						</ul>
+					</div>
+				</section>
+				
+				<!--Feedback information block of section-->
+				<section class="rectangle half" id="feedback">
+					<div id="left_feedback">
+						<div class="block_header">
+							<img src="images/feedback.png" alt="feedback section image"/>
+							<h2><a href="#">feedback</a></h2>
+							<img src="images/panel-divider.png" alt="feedback divider"/>
+						</div>
+					</div>
+					<div id="right_feedback">
+						<p>Lorem ipsum abdo dolore ut vindico.<br/>Abdo dolore ut vindico emet utilicy <a href="#">more info.</a></p>
+					</div>
+				</section>
+
+				<!--EVDC block of section: FIRST BLOCK-->
+				<!--broken into 3 sections: heading, info, graphs-->
+				<!--includes tags to attach jscript to, listed above each section-->
+				<section class="rectangle long evdc">
+					<!--includes heading info: type, city, state, name tags-->
+					<section class="evdc_heading block_header">
+						<h2 id="edvc_1"><img src="images/evdc.png" alt="evdc section image"/><a href="#">Research Triangle Park, NC - 11 Giraffe 01</a></h2>
+					</section>
+					<!--includes the vm and network tags to attach script to-->
+					<section class="evdc_info">
+						<div>
+							<img src="images/vm_count.png" alt="vm count"/>
+							<dl>
+								<dt>VM Count</dt>
+								<dd id="info_vm1">2</dd>
+							</dl>
+						</div>
+						<div>
+							<img src="images/networks.png" alt="networks"/>
+							<dl>
+								<dt>Networks</dt>
+								<dd id="info_network1">5</dd>
+							</dl>
+						</div>
+						<div>
+							<img src="images/firewall.png" alt="firewall"/>
+							<dl>
+								<dt>Firewall</dt>
+								<dd><a href="#">View >></a></dd>
+							</dl>
+						</div>
+						<div>
+							<img src="images/load_balance.png" alt="load balance"/>
+							<dl>
+								<dt>Load Balancers</dt>
+								<dd><a href="#">View >></a></dd>
+							</dl>
+						</div>
+					</section>
+					<section class="evdc_graphs">
+						<section>
+							<ul>
+								<li><img src="images/vcpu.png" alt="vcpu image"/></li>
+								<li>vCPUs</li>
+							</ul>
+							<div id="vcpu_1">
+								<img src="images/evdc-placeholder.png"/>
+							</div>
+						</section>
+						<section>
+							<ul>
+								<li><img src="images/vram.png" alt="vram image"/></li>
+								<li>vRAM</li>
+							</ul>
+							<div id="vram_1">
+								<img src="images/evdc-placeholder.png"/>
+							</div>
+						</section>
+						<section>
+							<ul>
+								<li><img src="images/storage.png" alt="storage image"/></li>
+								<li>Storage</li>
+							</ul>
+							<div id="stor_1">
+								<img src="images/evdc-placeholder.png"/>
+							</div>
+						</section>
+					</section>
+				</section>
+
+				<!--EVDC block of section: SECOND BLOCK-->
+				<!--broken into 3 sections: heading, info, graphs-->
+				<!--includes tags to attach jscript to, listed above each section-->
+				<section class="rectangle long evdc">
+					<!--includes heading info: type, city, state, name tags-->
+					<section class="evdc_heading block_header">
+						<h2 id="edvc_2"><img src="images/evdc.png" alt="evdc section image"/><a href="#">Research Triangle Park, NC - 11 Giraffe 01</a></h2>
+					</section>
+					<!--includes the vm and network tags to attach script to-->
+					<section class="evdc_info">
+						<div>
+							<img src="images/vm_count.png" alt="vm count"/>
+							<dl>
+								<dt>VM Count</dt>
+								<dd id="info_vm2">2</dd>
+							</dl>
+						</div>
+						<div>
+							<img src="images/networks.png" alt="networks"/>
+							<dl>
+								<dt>Networks</dt>
+								<dd id="info_network2">5</dd>
+							</dl>
+						</div>
+						<div>
+							<img src="images/firewall.png" alt="firewall"/>
+							<dl>
+								<dt>Firewall</dt>
+								<dd><a href="#">View >></a></dd>
+							</dl>
+						</div>
+						<div>
+							<img src="images/load_balance.png" alt="load balance"/>
+							<dl>
+								<dt>Load Balancers</dt>
+								<dd><a href="#">View >></a></dd>
+							</dl>
+						</div>
+					</section>
+					<section class="evdc_graphs">
+						<section>
+							<ul>
+								<li><img src="images/vcpu.png" alt="vcpu image"/></li>
+								<li>vCPUs</li>
+							</ul>
+							<div id="vcpu_2">
+								<img src="images/evdc-placeholder.png"/>
+							</div>
+						</section>
+						<section>
+							<ul>
+								<li><img src="images/vram.png" alt="vram image"/></li>
+								<li>vRAM</li>
+							</ul>
+							<div id="vram_2">
+								<img src="images/evdc-placeholder.png"/>
+							</div>
+						</section>
+						<section>
+							<ul>
+								<li><img src="images/storage.png" alt="storage image"/></li>
+								<li>Storage</li>
+							</ul>
+							<div id="stor_2">
+								<img src="images/evdc-placeholder.png"/>
+							</div>
+						</section>
+					</section>
+				</section>
+
+				<!--EVDC block of section: THIRD SECTION-->
+				<!--broken into 3 sections: heading, info, graphs-->
+				<!--includes tags to attach jscript to, listed above each section-->
+				<section class="rectangle long evdc">
+					<!--includes heading info: type, city, state, name tags-->
+					<section class="evdc_heading block_header">
+						<h2 id="edvc_3"><img src="images/evdc.png"/><a href="#">Research Triangle Park, NC - 11 Giraffe 01</a></h2>
+					</section>
+					<!--includes the vm and network tags to attach script to-->
+					<section class="evdc_info">
+						<div>
+							<img src="images/vm_count.png" alt="vm count"/>
+							<dl>
+								<dt>VM Count</dt>
+								<dd id="info_vm3">2</dd>
+							</dl>
+						</div>
+						<div>
+							<img src="images/networks.png" alt="networks"/>
+							<dl>
+								<dt>Networks</dt>
+								<dd id="info_network3">5</dd>
+							</dl>
+						</div>
+						<div>
+							<img src="images/firewall.png" alt="firewall"/>
+							<dl>
+								<dt>Firewall</dt>
+								<dd><a href="#">View >></a></dd>
+							</dl>
+						</div>
+						<div>
+							<img src="images/load_balance.png" alt="load balance"/>
+							<dl>
+								<dt>Load Balancers</dt>
+								<dd><a href="#">View >></a></dd>
+							</dl>
+						</div>
+					</section>
+					<section class="evdc_graphs">
+						<section>
+							<ul>
+								<li><img src="images/vcpu.png" alt="vcpu image"/></li>
+								<li>vCPUs</li>
+							</ul>
+							<div id="vcpu_3">
+								<img src="images/evdc-placeholder.png"/>
+							</div>
+						</section>
+						<section>
+							<ul>
+								<li><img src="images/vram.png" alt="vram image"/></li>
+								<li>vRAM</li>
+							</ul>
+							<div id="vram_3">
+								<img src="images/evdc-placeholder.png"/>
+							</div>
+						</section>
+						<section>
+							<ul>
+								<li><img src="images/storage.png" alt="storage image"/></li>
+								<li>Storage</li>
+							</ul>
+							<div id="stor_3">
+								<img src="images/evdc-placeholder.png"/>
+							</div>
+						</section>
+					</section>
+				</section>
+
+				<!--add evdc button at base of page-->
+				<section class="add_evdc">
+					<div>
+						<P><img src="images/add_evdc.png" alt="addition symbol, add evdc"/><a href="">purchase additional cloud EVDC</a></p>
+					</div>
+				</section>
+
+
+			</div>
+		</main>
+
+
+		<footer>
+			<!--Footer navigation of the page-->
+			<div class="container">
+				<ul>
+					<li><a href="#">Terms & Conditions</a></li>
+					<li>|</li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li>|</li>
+					<li><a href="#">Sitemap</a></li>
+					<li>|</li>
+					<li><a href="#">Home</a></li>
+				</ul>
+				<ul>
+					<li>&copy;2014 Company</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>
